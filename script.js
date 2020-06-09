@@ -558,6 +558,7 @@ function getFromFirebase(name) {
 
   e.onclick = function () {
     loadThis(name);
+    stopall.click();
   };
 }
 
