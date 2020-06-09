@@ -8,6 +8,16 @@ The application is developed by Gioele Greco and Luca Torelli, as part of the Ad
 
 ## Behind the concept
 
+## The loopstation
+
+### Tracks management
+
+### Graphics management
+
+## Comments
+
+## Further developements
+
 
 
 
