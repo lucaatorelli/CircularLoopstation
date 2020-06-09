@@ -31,6 +31,13 @@ The first tool that have been developed for the creation of an audio track is a 
 ### Uploading from database
 
 ## Graphics management
+### The Circle
+
+### Control box
+
+### Lateral panel
+
+### Audio banners
 
 # Comments
 
