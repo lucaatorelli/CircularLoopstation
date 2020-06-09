@@ -7,6 +7,9 @@ CircularLoopstation is a web application develeloped for musician and composers 
 The application is developed by Gioele Greco and Luca Torelli, as part of the Advanced Coding Tools & Methodologies course at Politecnico di Milano, Italy.
 
 ## Behind the concept
+\begin{itemize}
+\item hei
+\end{itemize}
 
 
 
