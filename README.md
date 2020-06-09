@@ -13,9 +13,7 @@ Everyone says "music is made of rhythmic sound", so what is rhythm?
 Rhythm in music is characterized by a repeating sequence of stressed (strong) and unstressed (weak) beats, and it's divided into bars organized by time signature and tempo indications.
 
 Time signature is a notational convention used to specify how many beats are contained in each measure, and which note value is equivalent to a beat.
-Tempo indication denotes how long is the beat distance. It's defined in beat per minutes and tipically it is associated to the ♩ (1/4).
-
-*For example ♩=60bpm means that there is 1 ♩ every second*
+Tempo indication denotes how long is the beat distance. It's defined in beat per minutes and tipically it is associated to the ♩ (1/4). *(For example ♩=60bpm means that there is 1 ♩ every second)*
 
 Time signature, normally, is based on fraction of 2 or 3. It's common to read on partitures quavers, triplets (3 notes played in the time of 2 equivalent notes), or multiple and submultiples of 2 and 3.
 
