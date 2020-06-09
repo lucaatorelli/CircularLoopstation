@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CircularLoopstation</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="page">
+    <header>Circular<b style="color: #FFF;">Loopstation</b>
+    </header>
+  </div>
+
+  <div class="sidepanel" style="padding: 5px; boder-radius: 5px;"><a class="item" href="#" onclick="window.open('https://drive.google.com/open?id=1Cts-Thv8an7_LMu2F7vD7tIRZuHkJnPF'); return false;">
+      Saved Traks </a>
+    <span class="contieni"></span>
+    <div class="line"></div>
+    <div class="esci" id="usci">
+      <i class="fa fa-chevron-left" aria-hidden="true"></i>
+      <i class="fa fa-chevron-right hide" aria-hidden="true"></i>
+    </div>
+    <div id="contieni2" style="height:35px;"></div>
+    <div>
+      <input class="FileIn" id="audio-upload" type="file" accept=".ogg, .oga, .mp3, .wav" multiple />
+      <p style="font-size: 16px; line-height: 16px; color: black;">Load instructions:</p>
+      <p style="font-size: 12px; line-height: 14px; color: black; "><br> 1- Click on "Saved Traks" and download the GDrive folder or single files.<br> 2- Unzip the folder and upload it using "select file" <br> 3- If the upload is successful, the matching buttons will change color.<br> 4- Click on the track button and upload it on the Loopstation!</p>
+      <div class="line"></div>
+      <p style="font-size: 12px; line-height: 14px; color: black; ">Advanced settings: click on the white circle.</p>
+    </div>
+  </div>
+
+  <div id="BFNcont">
+    <div class="BFN" id="sar"> </div>
+  </div>
+
+  <div id="station_container">
+    <div class="mask">
+      <div class="point">
+        <div class="lancetta">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="controls">
+
+    <div class="box" style="height: auto; width: 35%; padding: 15px;">
+
+      <canvas class="visualizer" height="1px"></canvas>
+      <button class="record">Record</button>
+      <button id="playall">Play all</button>
+      <button id="stopall">Reset</button>
+      <div class="spia"></div>
+
+      <form class="form-inline" action="/action_page.php" name="formxml1">
+        Signature:
+        <input type="number" name="xmlname" id="xmlname1" min="1"> /
+        <input type="number" name="xmlname" id="xmlname2" min="1">
+      </form>
+
+      <form action="" method="post" name="formxml3" min="1">
+        BPM of ♩ :
+        <input type="number" name="xmlname" id="xmlname3" min="10" max="400" value="120">
+      </form>
+
+      <form action="" method="post" name="formxml4">
+        Number of measures:
+        <input type="number" name="xmlname" id="xmlname4">
+      </form>
+      <div id="cont1" style="display: none;">
+        <div class="slidecontainer">
+          <div class="tooltip">
+            Manual Synch Value:
+            <span class="tooltiptext">
+              These values depend on your system parameters, set them manually by recording a reference track and allineate the next recordings.</span><span id="demo"></span>
+          </div>
+          <input type="range" min="1" max="512" value="100" class="slider" id="myRange">
+        </div>
+
+        <div class="slidecontainer">
+          <div class="tooltip">
+            Recording latency:
+            </span><span id="demoL"></span>
+          </div>
+          <input type="range" min="-100" max="512" value="50" class="slider" id="Latency">
+        </div>
+      </div>
+      <div id="container" style="min-height: 60px; display: none;"></div>
+
+    </div>
+
+  </div>
+
+  <section class="sound-clips" style="margin-left: 20%; margin-right:20%;">
+  </section>
+<div class="crediti" style="font-size: 10px; position: fixed; margin-left: 20px;
+    bottom: 0;
+    left: 0;">Developed by: <br>Gioele Greco & Luca Torelli</div>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<!-- partial -->
+  <script src='https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js'></script>
+<script src='https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

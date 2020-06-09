@@ -1,0 +1,484 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css);
+
+/* BFN */
+#BFNcont{
+  height: 100%;
+  width: 15%;
+  position: absolute;
+  left: 85%;
+}
+
+.BFN {
+  position: relative;
+  font-size: 40px;
+}
+
+/*==================================================*/
+/* DIALOGHI A COMPARSA */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: #d3d3d3;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5;
+  mix-blend-mode: color-burn;
+  position: absolute;
+  top: 50%;
+  left: 100%; 
+  margin-top: -5px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*==================================================*/
+/* SLIDER ORIZZONTALI */
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;  
+  appearance: none;
+  width: 100%; 
+  height: 10px; 
+  background: #d3d3d3; 
+  outline: none;
+  opacity: 0.7; 
+  -webkit-transition: .2s; 
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1; 
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 15px; 
+  height: 10px;
+  background: #5F66A1; 
+  cursor: pointer; 
+}
+
+.slider::-moz-range-thumb {
+  width: 15px; 
+  height: auto; 
+  background: #4CAF50; 
+  cursor: pointer; 
+}
+
+/*==================================================*/
+/* TEMPLATE */
+body { 
+  background: lighten(#F2F0D9, 5%); 
+  font-family: 'Open Sans', sans-serif; 
+}
+
+.page { 
+  width: 100%; 
+}
+
+header {
+  height: 65px;
+  background: #879BAD;
+  color: darken(#879BAD, 40%);
+  font-size: 42px;
+  font-weight: 400;
+  text-align: center;
+  padding: 5px;
+}
+
+/*==================================================*/
+/* INPUT FILE */
+.FileIn {
+  color: transparent;
+  width: 80%;
+}
+
+/*==================================================*/
+/* LATERAL PANEL */
+.sidepanel {
+  position:absolute;
+  height:auto;
+  background-color:#879BAD;
+  width:19%;
+  min-width:100px;
+  margin-left:0;
+  z-index:2;
+  font-size:1.5em;
+  line-height:1.5em;
+  color:#f1f1f2;
+  font-family:Helvetica;
+  text-align:center;
+}
+
+.sidepanel:before {
+  content:'';
+  position:absolute;
+  height:100vh;
+  width:10px;
+  top:0;
+  left:100%;
+  z-index:1;
+}
+
+.sidepanel span {
+  position:relative;
+  display:block;
+  width:calc(100% - 2em);
+  min-width:100px;  
+  padding:1em;
+  background-color:#879BAD;
+}
+
+.traccia {
+  height: 10px;
+  width: calc(100% - 10px);
+  margin: 5px;
+  position: relative;
+  display: block;
+  padding-bottom: inherit;
+}
+
+.contieni {
+  height:300px;
+  overflow-y:scroll;
+}
+
+.line {
+  height:1px;
+  width:calc(100% - 44px);
+  background-color:#E9D985;
+  margin:0 22px;
+}
+
+.esci {
+  position:absolute;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  font-size:16px;
+  background-color:#ef4581;
+  color:#f1f1f2;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  top:calc(50% - 22px);
+  left:calc(100% - 22px);
+  z-index:3;
+  cursor:pointer;
+}
+
+.fa-chevron-left {
+  margin-right:5px;
+}
+
+.fa-chevron-right {
+  margin-left:5px;
+}
+
+.hide {
+  display:none;
+}
+
+/*==================================================*/
+/* COMPONENTS */
+#station_container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.mask {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 1s;
+}
+
+.point {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.lancetta {
+  width: 1px;
+  height: 125px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+
+/*==================================================*/
+/* CONTROL SECTION */
+.controls {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.box {
+  width: 50%;
+  height: 100%;
+  padding: 5%;
+  position: relative;
+  margin: auto;
+  background-color: #A9A9A9;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/*==================================================*/
+/* BUTTONS AND ELEMENTS */
+#buttons {
+  display: inline-block;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  width: 75px;
+  height: 40px;
+  font-size: 1rem;
+  background: #5F66A1;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.2s;
+  margin: 5px;
+  transform: translate(0, -20px)
+}
+
+button:hover {
+  background: #7F8AE6;
+}
+
+button:active {
+  box-shadow: inset 0px 0px 20px rgba(0,0,0,0.5);
+  transform: translateY(-18px);
+}
+
+.spia {
+  height: 30px;
+  width: 30px;
+  background-color: grey;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid black;
+  transform: translate(0, -10px);
+}
+
+.spia_1 {
+  background-color: #6A8AD4;
+  border: 1px solid #2D4680;
+}
+
+.spia_2 {
+  background-color: red;
+  border: 1px solid #6F1717;
+}
+
+input {
+  width: auto;
+  margin: 5px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#xmlname1, #xmlname2 {
+  width: 35px;
+}
+
+/*==================================================*/
+/* METRONOME AND MESSAGES */
+#container {
+  width: 90%;
+  height: auto;
+  position: relative;
+  margin: 20px auto;
+  background-color: grey;
+  text-align: center;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.dot {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      margin: 25px 10px 10px 10px;
+      background: #FFF;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+.active { 
+  background: black; 
+}
+
+canvas {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/*==================================================*/
+/* AUDIO */
+.sound-clips {
+  border-radius: 20px;
+  flex: 1;
+  overflow: auto;
+}
+
+section, article {
+  display: block;
+  heigth: 50px;
+}
+
+article {
+  border-radius: 30px;
+  box-shadow:  inset 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.clip {
+  padding-bottom: 1rem;
+}
+
+audio {
+  width: 99%;
+  display: block;
+  margin: 1rem auto 0.5rem;
+  transform: translate(0, 5px);
+}
+
+.clip p {
+  display: inline-block;
+  font-size: 1rem;
+  background-color: white;
+  transform: translate(20px, 0);
+  border-radius: 10px;
+}
+
+.clip button {
+  font-size: 1rem;
+  float: right;
+}
+
+button.delete {
+  background: #f00;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+  transform: translate(-20px, 3px);
+}
+
+button.fireload {
+  background: #42AF49;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+  transform: translate(-20px, 3px);
+}
+
+/*==================================================*/
+/* CHECKBOX TRACK NAME */
+label {
+  font-size: 3rem;
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+   position: absolute;
+   top: -100px;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  transition: 0.3s all ease-out;
+  background-color: #efefef;
+  padding: 1rem;
+}
+
+aside p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+aside a {
+  color: #666;
+}
+
+/* Toggled State of information box */
+input[type=checkbox]:checked ~ aside {
+  transform: translateX(0);
+}
+
+/*==================================================*/
+/* ANIMATIONS */
+@keyframes rotation {
+  from {
+    transform-origin: 0 0;
+    -webkit-transform: rotate(180deg);
+   }
+   100%   {
+     transform-origin: 0 0;
+    -webkit-transform: rotate(540deg);
+                      
+  }
+}
+
+@keyframes rotazione {
+  from {
+    transform-origin: center;
+    transform: rotate(0deg);
+   }
+   to   {
+      transform-origin: center;
+    transform: rotate(360deg);
+                      
+  }
+}
