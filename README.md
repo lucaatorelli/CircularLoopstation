@@ -10,8 +10,13 @@ CircularLoopstation is available at: https://circloopstation.surge.sh/
 # Behind the concept
 
 # The loopstation
+CircularLoopstation allows the visualization of the rythmic structure thanks to a clock-like graphic component that follows the progression of the loop and shows the alternation of all the audio tracks that have been uploaded into the loop.
 
 ## Tracks management
+The application provides two ways of importing an audio track inside the loop.
+### Audio recording
+
+### Uploading from database
 
 ## Graphics management
 
