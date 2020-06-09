@@ -1,4 +1,4 @@
-![](images/Banner_Cil.jpg)
+![](images/Banner_Cil.jpeg)
 Available at: https://circloopstation.surge.sh/
 
 ## Introduction
