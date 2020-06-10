@@ -41,17 +41,17 @@ This system allows the user to record a lot of different tracks and to visualize
 CircularLoopstation can also import files from a database, that can be enlarged by every user by clicking on the "Load on Firebase" button.
 However, it's not possible to import every kind of file into the loop, because the application, to work well, needs some parameters like duration, time signature and bpm.
 
-How can I load files in the LoopStation?
+How can I import files in the LoopStation?
 
 - Click on "Saved Traks" and download the GDrive folder or single files.
 
-- Unzip the folder and upload it using "select file"
+- Unzip the folder and upload it using "select file".
 
 - If the upload is successful, the matching buttons will change color.
 
 - Click on the track button and upload it on the Loopstation!
 
-How can I load files in Database?
+How can I load files into the database?
 The istruction appears in the control-box: "Click here to download, to share with other users and online storage. Load on drive in the window that will appear"
 that means that the user can download the selected track, its datas are stored on Firebase
 and if he wants to share with other users he can upload it on drive(with a window that allow he to upload on our GDrive
@@ -71,6 +71,3 @@ So, in order to import any file, the trick is to record a track with the same fi
 # Comments
 
 ## Further developements
-
-
-
