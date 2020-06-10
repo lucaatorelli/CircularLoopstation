@@ -29,16 +29,16 @@ CircularLoopstation allows the visualization of the rythmic structure thanks to 
 ### The Circle
 
 ### Control box
+The control box is the component with which the user can control the loopstation and set recording parameters. It has two main configurations: a simpler one and an advanced one.
+At the bottom of the control box appears warning messages and is visualized the metronome while recording.
 <p align="center"><img aling="center" src="images/Control box.png" /></p>
 
-The control box has 2 configurations: simple and advanced.
-In the bottom of this section appears some warning messages and is visualized the metronome while recording.
-Simple state contains three buttons:
-- Recording: that allow to start recording,
-- Play All: that allow to play all traks together,
-- Reset: that stop every track and circles movement while the loop is plaing.
+The simpler configuration contains three buttons:
+- Record: allows to start recording,
+- Play All: allows to play the whole loop,
+- Reset: stops every track and the circles animations.
 
-On the left of the buttons there is an indicator light that becomes blue in record preparing and red during recording.
+On the right of these buttons there is an indicator light that turns blue during record preparing and red during the recording session.
 
 It also contains 4 numeric parameter section:
 - Numerator of time signature,
