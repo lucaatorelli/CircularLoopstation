@@ -6,7 +6,8 @@ var latency = 50;
 var loadTime = 100;
 var mcm = 1;
 var mcmDen = 1;
-var strlun = 15;
+var strlun = 12;
+var tempogen;
 //Vectors
 var archi = [];
 var audioi = []; //audio informations
@@ -61,13 +62,15 @@ mask.onclick = function () {
     cont1.style = "display: block";
   }
 };
+
 function abilitazione() {
-  if (audioi.length != 0) {
-    xmlname3.disabled = true;
+  if (tempogen >= 43200) {
+    freg.style = "display: block; font-size: 200px; margin: 20%;";
   } else {
-    xmlname3.disabled = false;
+    freg.style = "display: none";
   }
 }
+
 var rendabilita = setInterval(function () {
   abilitazione();
 }, 500);
@@ -320,6 +323,7 @@ function salva(Nome) {
 
 //Download functions
 function downInfo(el) {
+  container.style.display = "block";
   var tes = document.createElement("div");
   tes.classList.add("Info");
   tes.style =
@@ -328,7 +332,10 @@ function downInfo(el) {
     "Click here to download, to share with other users and online storage. Load on drive in the window that will appear";
   container.appendChild(tes);
   el.onmouseout = function () {
-    container.removeChild(tes);
+    setTimeout(function () {
+      container.removeChild(tes);
+      container.style.display = "none";
+    }, 1500);
   };
 }
 
@@ -374,104 +381,108 @@ function LoadData({ target }) {
 document.getElementById("audio-upload").addEventListener("change", LoadData);
 
 function popola() {
-  if (TemLoad.length == 0) {
-    console.log("You haven't load datas!");
-    alert("You haven't load datas!");
-  }
+  if (spia.className != "spia") {
+    console.log("you are recording!");
+  } else {
+    if (TemLoad.length == 0) {
+      console.log("You haven't load datas!");
+      alert("You haven't load datas!");
+    }
 
-  while (elstring.AudID == []) {
-    setTimeout(alert("Loading selected Track..."), 500);
-  }
+    while (elstring.AudID == []) {
+      setTimeout(alert("Loading selected Track..."), 500);
+    }
 
-  for (i = 0; i < TemLoad.length; i++) {
-    if (TemLoad[i][0] == elstring.AudID) {
-      xmlname3.disabled = true;
-      var audioURL = TemLoad[i][1];
-      var Utility = elstring["NumDenNBPM"];
-      var num = Utility[0];
-      xmlname1.value = num;
-      var den = Utility[1];
-      xmlname2.value = den;
-      var BPM = Utility[3];
-      if (xmlname3.value != BPM) {
-        alert(
-          "This track is recorded at " +
-            BPM +
-            "bpm, please set the same bpm value "
-        );
-        return;
-      }
-      var N = Utility[2];
-      xmlname4.value = N;
-      xmlname3.value = BPM;
-      get_data(num, den, N, BPM);
-      length = elstring["AudLEN"];
-      mcm = estMcm(beats);
-      var t = Math.round(((60 * 4 * mcm) / (BPM * mcmDen)) * 100) / 100;
-      tempogen = t;
-      var clipContainer = document.createElement("article");
-      var clipLabel = document.createElement("p");
-      var audio = document.createElement("audio");
-      var deleteButton = document.createElement("button");
-      clipContainer.classList.add("clip");
-      var trac = document.querySelectorAll("audio");
-      var tem = trac.length;
-      clipContainer.style = "background-color:" + "#" + colors[tem];
-
-      audio.setAttribute("controls", "");
-      deleteButton.textContent = "Delete";
-      deleteButton.className = "delete";
-      clipContainer.appendChild(audio);
-      clipContainer.appendChild(clipLabel);
-      clipContainer.appendChild(deleteButton);
-      soundClips.appendChild(clipContainer);
-      audio.controls = true;
-      audio.id = elstring.AudID + "aud";
-      clipLabel.textContent = audio.id;
-      clipLabel.style = "background-color:transparent;";
-      audio.src = audioURL;
-      audio.play();
-      var moment = [audio, length, audioURL, Utility];
-      audioi.push(moment);
-
-      deleteButton.onclick = function (e, BPM) {
-        stopall.click();
-        var BPM = document.formxml3.xmlname3.value;
-        setup_circle();
-        station_container.style.height = "350px";
-        ln.style.height = "125px";
-        idx = getindex(e);
-        colors.splice(idx, 1);
-        beats.splice(idx, 1);
-        circles.splice(idx, 1);
-        audioi.splice(idx, 1);
-        archi.splice(idx, 1);
+    for (i = 0; i < TemLoad.length; i++) {
+      if (TemLoad[i][0] == elstring.AudID) {
+        xmlname3.disabled = true;
+        var audioURL = TemLoad[i][1];
+        var Utility = elstring["NumDenNBPM"];
+        var num = Utility[0];
+        xmlname1.value = num;
+        var den = Utility[1];
+        xmlname2.value = den;
+        var BPM = Utility[3];
+        if (xmlname3.value != BPM) {
+          alert(
+            "This track is recorded at " +
+              BPM +
+              "bpm, please set the same bpm value "
+          );
+          return;
+        }
+        var N = Utility[2];
+        xmlname4.value = N;
+        xmlname3.value = BPM;
+        get_data(num, den, N, BPM);
+        length = elstring["AudLEN"];
         mcm = estMcm(beats);
-        console.log("NUOVO mcm:" + mcm);
         var t = Math.round(((60 * 4 * mcm) / (BPM * mcmDen)) * 100) / 100;
         tempogen = t;
-        var r = 250;
-        var h = 350;
+        var clipContainer = document.createElement("article");
+        var clipLabel = document.createElement("p");
+        var audio = document.createElement("audio");
+        var deleteButton = document.createElement("button");
+        clipContainer.classList.add("clip");
+        var trac = document.querySelectorAll("audio");
+        var tem = trac.length;
+        clipContainer.style = "background-color:" + "#" + colors[tem];
 
-        for (i = 0; i < beats.length; i++) {
-          archi[i] = (numeratori[i] / mcm) * 360;
-          r = r + 50;
-          h = h + 50;
-          reconstruct_circle(archi[i], r, i);
-          cont = document.querySelector("#station_container");
-          cont.style.height = h + "px";
-        }
+        audio.setAttribute("controls", "");
+        deleteButton.textContent = "Delete";
+        deleteButton.className = "delete";
+        clipContainer.appendChild(audio);
+        clipContainer.appendChild(clipLabel);
+        clipContainer.appendChild(deleteButton);
+        soundClips.appendChild(clipContainer);
+        audio.controls = true;
+        audio.id = elstring.AudID + "aud";
+        clipLabel.textContent = audio.id;
+        clipLabel.style = "background-color:transparent;";
+        audio.src = audioURL;
+        audio.play();
+        var moment = [audio, length, audioURL, Utility];
+        audioi.push(moment);
 
-        ln.style.height = 125 + i * 25 + "px";
-        evtTgt.parentNode.parentNode.removeChild(evtTgt.parentNode);
-        playall.disabled = false;
-        if (audioi.length === 0) {
-          xmlname3.disabled = false;
-        }
-        brian(mcm, mcmDen);
-        remove_animations();
-      };
-      break;
+        deleteButton.onclick = function (e, BPM) {
+          stopall.click();
+          var BPM = document.formxml3.xmlname3.value;
+          setup_circle();
+          station_container.style.height = "350px";
+          ln.style.height = "125px";
+          idx = getindex(e);
+          colors.splice(idx, 1);
+          beats.splice(idx, 1);
+          circles.splice(idx, 1);
+          audioi.splice(idx, 1);
+          archi.splice(idx, 1);
+          mcm = estMcm(beats);
+          console.log("NUOVO mcm:" + mcm);
+          var t = Math.round(((60 * 4 * mcm) / (BPM * mcmDen)) * 100) / 100;
+          tempogen = t;
+          var r = 250;
+          var h = 350;
+
+          for (i = 0; i < beats.length; i++) {
+            archi[i] = (numeratori[i] / mcm) * 360;
+            r = r + 50;
+            h = h + 50;
+            reconstruct_circle(archi[i], r, i);
+            cont = document.querySelector("#station_container");
+            cont.style.height = h + "px";
+          }
+
+          ln.style.height = 125 + i * 25 + "px";
+          evtTgt.parentNode.parentNode.removeChild(evtTgt.parentNode);
+          playall.disabled = false;
+          if (audioi.length === 0) {
+            xmlname3.disabled = false;
+          }
+          brian(mcm, mcmDen);
+          remove_animations();
+        };
+        break;
+      }
     }
   }
 }
@@ -527,19 +538,21 @@ function readInfo(el) {
   };
 }
 
-function troncanome(stringa,maxval){
-  var pass="";
-  if(stringa.length>=maxval){
-    pass=stringa.slice(0,maxval)+"..."
+function troncanome(stringa, maxval) {
+  var pass = "";
+  if (stringa.length >= maxval) {
+    pass = stringa.slice(0, maxval) + "...";
     return pass;
-  }else{return stringa;}
+  } else {
+    return stringa;
+  }
 }
 
 function getFromFirebase(name) {
   sidepannel = document.querySelector(".contieni");
   var e = document.createElement("button");
   e.id = name;
-  var nomeval = troncanome(name,strlun);
+  var nomeval = troncanome(name, strlun);
   e.textContent = nomeval;
   e.classList.add("traccia");
   e.classList.add("audioFileInput");
@@ -558,7 +571,7 @@ function getFromFirebase(name) {
 
   e.onclick = function () {
     loadThis(name);
-    stopall.click();
+    // stopall.click();
   };
 }
 
@@ -630,9 +643,8 @@ if (navigator.mediaDevices.getUserMedia) {
     };
 
     bttn.onclick = function () {
-      if (audioi.length != 0) {
-        xmlname3.disabled = true;
-      }
+      stopall.click();
+      xmlname3.disabled = true;
 
       var num = document.formxml1.xmlname1.value;
       var den = document.formxml1.xmlname2.value;
@@ -641,6 +653,7 @@ if (navigator.mediaDevices.getUserMedia) {
 
       if (num === "" || den === "" || N === "" || BPM === "") {
         alert("Insert recording parameters");
+        xmlname3.disabled = false;
       } else {
         container.style = "display: block";
         ValoriUtili = new Array();
@@ -733,6 +746,7 @@ if (navigator.mediaDevices.getUserMedia) {
         }
 
         setTimeout(function () {
+          stopall.disabled = true;
           mediaRecorder.start();
           mcm = estMcm(beats);
           var t = Math.round(((60 * 4 * mcm) / (BPM * mcmDen)) * 100) / 100;
@@ -764,6 +778,7 @@ if (navigator.mediaDevices.getUserMedia) {
         $(document).keyup(function (e) {
           if (e.keyCode == 27 && mediaRecorder.state == "recording") {
             // Esc
+            stopall.disabled = false;
             stoprecorder();
             //cancel graphics:
             el = station_container.querySelector(".circle");
@@ -792,8 +807,11 @@ if (navigator.mediaDevices.getUserMedia) {
               cont = document.querySelector("#station_container");
               cont.style.height = h + "px";
             }
-
+            if (circles == "") {
+              xmlname3.disabled = false;
+            }
             ln.style.height = 125 + i * 25 + "px";
+            brian(mcm, mcmDen);
             //flag:
             escflag = 1;
           }
@@ -803,6 +821,7 @@ if (navigator.mediaDevices.getUserMedia) {
 
     //At the end of the recording:
     mediaRecorder.onstop = function (e) {
+      stopall.disabled = false;
       container.style = "display: none";
       if (escflag == 1) {
         chunks = [];
@@ -926,7 +945,7 @@ if (navigator.mediaDevices.getUserMedia) {
 
           if (audioi.length === 0) {
             xmlname3.disabled = false;
-            mcm = 0;
+            mcm = 1;
           }
           brian(mcm, mcmDen);
           remove_animations();
@@ -946,9 +965,9 @@ if (navigator.mediaDevices.getUserMedia) {
       }
     };
   };
-
   var onError = function (err) {
-    console.log("The following error occured: " + err);
+    alert("Permission denied: you will not be able to record! ");
+    console.log("an error occured:" + err);
   };
 
   navigator.mediaDevices.getUserMedia(constraints).then(onSuccess, onError);
@@ -1057,15 +1076,34 @@ function scorriTempo() {
   }, (1000 * tempogen) / mcm);
 }
 
+function checkTrack(traccia) {
+  if (traccia.readyState != 0) {
+    return;
+  } else {
+    container.style.display = "block";
+    container.textContent = "Your system is slow, wait or refresh ";
+  }
+}
+
+function MemCheck() {
+  var segna = 0;
+  for (i = 0; i < audioi.length; i++) {
+    if (segna == 0) {
+      checkTrack(audioi[i][0]);
+      segna = 1;
+    }
+    return;
+  }
+}
+
 playall.onclick = function () {
   document.getElementsByClassName("record").disabled = true;
   cicloTxt = [];
   ciclone = [];
   myLoop = [];
   var tracce = document.querySelectorAll("audio");
-  if (tracce.length == 0) {
-    var controllotrack = alert("There are no tracks to be played");
-  } else {
+  if (tracce.length != 0) {
+    MemCheck();
     scorriTempo();
     Tempotrac();
     partiamo();
@@ -1151,3 +1189,38 @@ function quantodura() {
   secondi_resto = intervallo - giorni * 86400 - ore * 3600 - minuti * 60;
   console.log(giorni, ore, minuti);
 }
+
+function getBrowserInfo() {
+  var ua = navigator.userAgent,
+    tem,
+    M =
+      ua.match(
+        /(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i
+      ) || [];
+  if (/trident/i.test(M[1])) {
+    tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
+    return "IE " + (tem[1] || "");
+  }
+  if (M[1] === "Chrome") {
+    tem = ua.match(/\b(OPR|Edge)\/(\d+)/);
+    if (tem != null) return tem.slice(1).join(" ").replace("OPR", "Opera");
+  }
+  M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, "-?"];
+  if ((tem = ua.match(/version\/(\d+)/i)) != null) M.splice(1, 1, tem[1]);
+  return M.join(" ");
+}
+
+var browserInfo = getBrowserInfo();
+
+console.log("You are using the browser: " + browserInfo);
+
+function controlloBrow() {
+  if (browserInfo.slice(0, 2) == "Ch" || browserInfo.slice(0, 2) == "Fi") {
+    return;
+  } else {
+    container.style.display = "block";
+    container.textContent =
+      "We are sorry, this browser could not perform recording. You can still import tracks on the left. We suggest you to use Chrome or Firefox.";
+  }
+}
+controlloBrow();
