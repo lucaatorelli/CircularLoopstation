@@ -718,6 +718,7 @@ if (navigator.mediaDevices.getUserMedia) {
         }
 
         function stoprecorder() {
+          stopall.disabled=false;
           mediaRecorder.stop();
           stopall.click();
           ln.style.animation = "";
@@ -778,7 +779,6 @@ if (navigator.mediaDevices.getUserMedia) {
         $(document).keyup(function (e) {
           if (e.keyCode == 27 && mediaRecorder.state == "recording") {
             // Esc
-            stopall.disabled = false;
             stoprecorder();
             //cancel graphics:
             el = station_container.querySelector(".circle");
@@ -834,7 +834,7 @@ if (navigator.mediaDevices.getUserMedia) {
 
         var clipName = prompt(
           "Enter a name for your sound clip",
-          "My unnamed clip"
+          "My unnamed clip " + circles.length
         );
 
         console.log(clipName);
