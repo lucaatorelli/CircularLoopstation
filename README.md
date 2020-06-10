@@ -25,7 +25,7 @@ This composing technique is called ***"polyrhythmic"*** and its meter is called 
 # The loopstation
 CircularLoopstation allows the visualization of the rythmic structure thanks to a clock-like graphic component that follows the progression of the loop and shows the alternation of all the audio tracks that have been uploaded into the loop. The loopstation is designed to be able to manage and visualize different signatures and durations at the same time, ensuring a simple but powerful understanding of the underlying structure of the cycle.
 
-## Graphics management
+## Graphic components
 ### The Circle
 
 ### Control box
@@ -47,10 +47,9 @@ As the registration is ended, the application asks to the user to set a name for
 This system allows the user to record a lot of different tracks and to visualize their superposition by simply looking at the graphic clock-like component.
 
 ### Uploading from database
-CircularLoopstation can also import files from a database, that can be enlarged by every user by clicking on the "Load on Firebase" button.
-However, it's not possible to import every kind of file into the loop, because the application, to work well, needs some parameters like duration, time signature and bpm.
+CircularLoopstation can also import files into the loopstation from a database, that can be enlarged by every user by uploading tracks with the "Load on Firebase" button.
 
-How can I import files in the LoopStation?
+How can I import files in CircularLoopstation? *(Instructions are in the side panel)*
 
 - Click on "Saved Traks" and download the GDrive folder or single files.
 
@@ -60,13 +59,13 @@ How can I import files in the LoopStation?
 
 - Click on the track button and upload it on the Loopstation!
 
-How can I load files into the database?
-The istruction appears in the control-box: "Click here to download, to share with other users and online storage. Load on drive in the window that will appear"
-that means that the user can download the selected track, its datas are stored on Firebase
-and if he wants to share with other users he can upload it on drive(with a window that allow he to upload on our GDrive
-if he doesn't want to share it can store locally his files.
-files are controlled by administrator and ca be deleted after some days if they are not in the GDrive.
-So, in order to import any file, the trick is to record a track with the same file name and the same correct input data and upload the file instead of the recording. 
+How can I load files into the database? *(Instructions appear into the control box)*
+
+By clicking on the "Load on Firebase" button, the user can download the selected track and upload it on the database through the GDrive window that will appear. This way, he can both share its recordings with other users and store the files locally on his computer.
+
+The files stored in the database are managed by the administrator, and can be deleted after some days if they are no more used.
+
+However, it's not possible to import every kind of file into the loop, because the application, to work well, needs some parameters like duration, time signature and bpm. To do so, the trick is to record a track with the same file name and the correct parameters, click on "Load on Firebase", and upload the desired file instead of the recording. 
 
 # Comments
 
