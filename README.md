@@ -32,10 +32,12 @@ CircularLoopstation allows the visualization of the rythmic structure thanks to 
 <p align="center"><img aling="center" src="images/Control box.png" /></p>
 
 The control box contains has 2 statements, simple and advanced.
+In the bottom of this section appears some warning messages and is visualized the metronome while recording.
 Simple state contains three buttons:
 - Recording: that allow to start recording,
 - Play All: that allow to play all traks together,
 - Reset: that stop every track and circles movement while the loop is plaing.
+On the left of the buttons there is an indicator light that becomes blue in record preparing and red during recording.
 It also contains 4 numeric parameter section:
 - Numerator of time signature,
 - Denominator of time signature,
