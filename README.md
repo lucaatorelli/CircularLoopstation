@@ -29,9 +29,10 @@ CircularLoopstation allows the visualization of the rythmic structure thanks to 
 ### The Circle
 
 ### Control box
+The control box has 2 configurations: simple and advanced.
+
 <p align="center"><img aling="center" src="images/Control box.png" /></p>
 
-The control box has 2 configurations: simple and advanced.
 In the bottom of this section appears some warning messages and is visualized the metronome while recording.
 Simple state contains three buttons:
 - Recording: that allow to start recording,
