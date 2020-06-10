@@ -29,10 +29,9 @@ CircularLoopstation allows the visualization of the rythmic structure thanks to 
 ### The Circle
 
 ### Control box
-The control box has 2 configurations: simple and advanced.
-
 <p align="center"><img aling="center" src="images/Control box.png" /></p>
 
+The control box has 2 configurations: simple and advanced.
 In the bottom of this section appears some warning messages and is visualized the metronome while recording.
 Simple state contains three buttons:
 - Recording: that allow to start recording,
@@ -50,19 +49,19 @@ The advanced state in addition contains two parameters that are aviable by click
 This command are necessary to work well on every device, cause these lengths depend by device hardware or settings.
 
 ### Lateral panel
+The lateral panel is the upload section, it is composed, from the top to the bottom, by:
+
 <img align="left" width = "150" src="images/Screenshot (2011).png" />
  
-The lateral panel is the upload section, it is composed, from the top to the bottom, by:
+- Title ("<ins>Saved Tracks</ins>"): by clicking on it the GDrive folder that contains all the stored traks will be opened,
  
- - Title ("<ins>Saved Tracks</ins>"): by clicking on it the GDrive folder that contains all the stored traks will be opened,
+- Tracks container: in this section there are all the tracks stored in Firebase, on mouse on will appear below all the rhythm       information about the selected track. When user uploads any tracks by "load files" section, the corrisponding button will change color, and on click it will import the trak in the Circle.
  
- - Tracks container: in this section there are all the tracks stored in Firebase, on mouse on will appear below all the rhythm       information about the selected track. When user uploads any tracks by "load files" section, the corrisponding button will change color, and on click it will import the trak in the Circle.
+- Info section: contains data messages of the selected track,
  
- - Info section: contains data messages of the selected track,
+- Load files: input that allow the user to import external files,
  
- - Load files: input that allow the user to import external files,
- 
- - Instruction section: contains istructions about loading and advanced settings.
+- Instruction section: contains istructions about loading and advanced settings.
 
 ### Audio banners
 
