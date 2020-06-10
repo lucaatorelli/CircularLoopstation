@@ -25,6 +25,15 @@ This composing technique is called ***"polyrhythmic"*** and its meter is called 
 # The loopstation
 CircularLoopstation allows the visualization of the rythmic structure thanks to a clock-like graphic component that follows the progression of the loop and shows the alternation of all the audio tracks that have been uploaded into the loop. The loopstation is designed to be able to manage and visualize different signatures and durations at the same time, ensuring a simple but powerful understanding of the underlying structure of the cycle.
 
+## Graphics management
+### The Circle
+
+### Control box
+
+### Lateral panel
+
+### Audio banners
+
 ## Tracks management
 The application provides two ways for importing an audio track into the loop:
 
@@ -58,15 +67,6 @@ and if he wants to share with other users he can upload it on drive(with a windo
 if he doesn't want to share it can store locally his files.
 files are controlled by administrator and ca be deleted after some days if they are not in the GDrive.
 So, in order to import any file, the trick is to record a track with the same file name and the same correct input data and upload the file instead of the recording. 
-
-## Graphics management
-### The Circle
-
-### Control box
-
-### Lateral panel
-
-### Audio banners
 
 # Comments
 
