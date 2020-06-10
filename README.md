@@ -29,7 +29,7 @@ CircularLoopstation allows the visualization of the rythmic structure thanks to 
 ### The Circle
 
 ### Control box
-<img align="center" width = "150" src="images/Control box.png" />
+<div style="text-align:center"><img src="images/Control box.png" /></div>
 
 The control box contains has 2 statements, simple and advanced.
 Simple state contains three buttons:
