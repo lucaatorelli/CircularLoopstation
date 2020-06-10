@@ -35,9 +35,25 @@ After two beating measures, the recording session will start, announced by the i
 
 As the registration is ended, the application asks to the user to set a name for the recorded sound clip. After that, the audio clip will be visible as a colored banner beneath the control box.
 
-This system allows the user to 
+This system allows the user to record a lot of different tracks and to visualize their superposition by simply looking at the graphic clock-like component.
 
 ### Uploading from database
+CircularLoopstation can also import files from a database, that can be enlarged by every user by clicking on the "Load on Firebase" button.
+However, it's not possible to import every kind of file into the loop, because the application, to work well, needs some parameters like duration, time signature and bpm.
+
+How can I load files in the LoopStation?
+*1- Click on "Saved Traks" and download the GDrive folder or single files.
+2- Unzip the folder and upload it using "select file"
+3- If the upload is successful, the matching buttons will change color.
+4- Click on the track button and upload it on the Loopstation!*
+
+How can I load files in Database?
+The istruction appears in the control-box: "Click here to download, to share with other users and online storage. Load on drive in the window that will appear"
+that means that the user can download the selected track, its datas are stored on Firebase
+and if he wants to share with other users he can upload it on drive(with a window that allow he to upload on our GDrive
+if he doesn't want to share it can store locally his files.
+files are controlled by administrator and ca be deleted after some days if they are not in the GDrive.
+So, in order to import any file, the trick is to record a track with the same file name and the same correct input data and upload the file instead of the recording. 
 
 ## Graphics management
 ### The Circle
