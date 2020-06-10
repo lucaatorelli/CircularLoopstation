@@ -38,13 +38,12 @@ The simpler configuration contains three buttons:
 - Play All: allows to play the whole loop,
 - Reset: stops every track and the circles animations.
 
-On the right of these buttons there is an indicator light that turns blue during record preparing and red during the recording session.
+On the right of these buttons there is an indicator light that turns blue during record preparing and turns red during the recording session.
 
-It also contains 4 numeric parameter section:
-- Numerator of time signature,
-- Denominator of time signature,
-- BPM, beats per minute, or rather tempo velocity,
-- Number of measure.
+The control box, in its simples configuration, contains also four numeric inputs:
+- Numerator and denominator of time signature,
+- BPM, beats per minute (or rather tempo velocity),
+- Number of measures.
 
 The advanced state in addition contains two parameters that are aviable by clicking on the white circle, these are:
 - Manual Synch Value (100 ms by default): while recording, allows the user to set the gap between the played tracks and the recording;
