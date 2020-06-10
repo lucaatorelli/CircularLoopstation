@@ -54,7 +54,7 @@ These two parameters are necessary to work well on every device, because their v
 ### Lateral panel
 The lateral panel is the upload section, it is composed, from the top to the bottom, by:
 
-<img align="left" width = "150" src="images/Lateral_panel.png" />
+<img align="left" width = "180" src="images/Lateral_panel.png" />
  
 - Title ("<ins>Saved Tracks</ins>"): by clicking on it the GDrive folder that contains all the stored traks will be opened,
  
