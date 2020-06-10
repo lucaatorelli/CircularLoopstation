@@ -14,7 +14,7 @@ Everyone says "music is made of rhythmic sound", so what is rhythm?
 Rhythm in music is characterized by a repeating sequence of stressed (strong) and unstressed (weak) beats, and it's divided into bars organized by time signature and tempo indications.
 
 Time signature is a notational convention used to specify how many beats are contained in each measure, and which note value is equivalent to a beat.
-Tempo indication denotes how long is the beat distance. It's defined in beat per minutes and tipically it is associated to the ♩ (1/4). *(For example ♩=60bpm means that there is one ♩ every second)*
+Tempo indication denotes how long is the beat distance. It's defined in beat per minutes and tipically it is associated to the ♩ (1/4). *(For example ♩=60bpm means that there is one ♩ every one second)*
 
 Time signature, normally, is based on fraction of 2 or 3. It's common to read on partitures quavers, triplets (3 notes played in the time of 2 equivalent notes), or multiple and submultiples of 2 and 3.
 
@@ -30,10 +30,10 @@ CircularLoopstation allows the visualization of the rythmic structure thanks to 
 
 ### Control box
 The control box is the component with which the user can control the loopstation and set recording parameters. It has two main configurations: a simpler one and an advanced (or complete) one.
-At the bottom of the control box appears warning messages and is visualized the metronome while recording.
+At the bottom of the control box appear warning messages and is visualized the metronome while recording.
 <p align="center"><img aling="center" src="images/Control box.png" /></p>
 
-The simpler configuration contains three buttons:
+The simpler configuration contains three main buttons:
 - Record: allows to start recording,
 - Play All: allows to play the whole loop,
 - Reset: stops every track and the circles animations.
