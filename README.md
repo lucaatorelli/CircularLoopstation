@@ -35,15 +35,15 @@ CircularLoopstation allows the visualization of the rythmic structure thanks to 
  
 The lateral panel is the upload section, it is composed, from the top to the bottom, by:
  
-- Title ("<ins>Saved Tracks</ins>"): by clicking on it the GDrive folder that contains all the stored traks will be opened,
+ - Title ("<ins>Saved Tracks</ins>"): by clicking on it the GDrive folder that contains all the stored traks will be opened,
  
-- Tracks container: in this section there are all the tracks stored in Firebase, on mouse on will appear below all the rhythm       information about the selected track. When user uploads any tracks by "load files" section, the corrisponding button will change color, and on click it will import the trak in the Circle.
+ - Tracks container: in this section there are all the tracks stored in Firebase, on mouse on will appear below all the rhythm       information about the selected track. When user uploads any tracks by "load files" section, the corrisponding button will change color, and on click it will import the trak in the Circle.
  
-- Info section: contains data messages of the selected track,
+ - Info section: contains data messages of the selected track,
  
-- Load files: input that allow the user to import external files,
+ - Load files: input that allow the user to import external files,
  
-- Instruction section: contains istructions about loading and advanced settings.
+ - Instruction section: contains istructions about loading and advanced settings.
 
 ### Audio banners
 
