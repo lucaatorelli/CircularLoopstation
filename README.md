@@ -6,7 +6,7 @@ CircularLoopstation is a web application developed for musician and composers th
 The application is developed by Gioele Greco and Luca Torelli, as part of the Advanced Coding Tools & Methodologies course at Politecnico di Milano, Italy.
 
 - CircularLoopstation is available at: https://circloopstation.surge.sh/
-- Link to CodePen: https://codepen.io/Torelli/pen/ZEQbdjG
+- Link to CodePen: https://codepen.io/Torelli/pen/mdVVwpp
 
 # Behind the concept
 Everyone says "music is made of rhythmic sound", so what is rhythm?
