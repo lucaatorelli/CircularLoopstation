@@ -42,10 +42,14 @@ CircularLoopstation can also import files from a database, that can be enlarged 
 However, it's not possible to import every kind of file into the loop, because the application, to work well, needs some parameters like duration, time signature and bpm.
 
 How can I load files in the LoopStation?
-*1- Click on "Saved Traks" and download the GDrive folder or single files.
+
+1- Click on "Saved Traks" and download the GDrive folder or single files.
+
 2- Unzip the folder and upload it using "select file"
+
 3- If the upload is successful, the matching buttons will change color.
-4- Click on the track button and upload it on the Loopstation!*
+
+4- Click on the track button and upload it on the Loopstation!
 
 How can I load files in Database?
 The istruction appears in the control-box: "Click here to download, to share with other users and online storage. Load on drive in the window that will appear"
