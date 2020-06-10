@@ -67,7 +67,6 @@ The lateral panel is the upload section, it is composed, from the top to the bot
 - Instruction section: contains istructions about loading and advanced settings.
 
 <br/><br/>
-<br/><br/>
 
 ### Audio banners
 
