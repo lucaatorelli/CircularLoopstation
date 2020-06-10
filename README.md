@@ -45,7 +45,7 @@ The control box, in its simples configuration, contains also four numeric inputs
 - BPM, beats per minute (or rather tempo velocity),
 - Number of measures.
 
-The advanced configuration, in addition, contains two sliders that become visible by clicking on the white circle. These sliders are:
+The advanced (or complete) configuration, in addition, contains two sliders that become visible by clicking on the white circle. These sliders are:
 - Manual Synch Value (100 ms by default): while recording, allows the user to set the gap between the played tracks and the recording;
 - Recording latency: (50 ms by default): it adjusts the gap between the ideal recording start time and the effective recording start time.
 
