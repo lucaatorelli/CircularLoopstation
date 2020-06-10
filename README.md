@@ -31,7 +31,7 @@ CircularLoopstation allows the visualization of the rythmic structure thanks to 
 ### Control box
 
 ### Lateral panel
-<img align="left" width = "150" src="images/Screenshot (201).png" />
+<img align="left" width = "150" src="images/Screenshot (2011).png" />
  
 The lateral panel is the upload section, it is composed, from the top to the bottom, by:
  
