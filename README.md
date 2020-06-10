@@ -54,7 +54,7 @@ These two parameters are necessary to work well on every device, because their v
 ### Lateral panel
 The lateral panel is the interface part dedicated to the management of the tracks inside the database. It is composed by different sections with different funcitonalities. Specifically, from the top to the bottom, we can find: 
 
-<img align="left" width = "180" src="images/Lateral_panel.png" />
+<img align="left" width = "180" src="images/Lateralpanel.png" />
  
 - Title ("<ins>Saved Tracks</ins>"): by clicking on it the GDrive folder that contains all the stored traks will be opened,
  
