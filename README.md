@@ -52,9 +52,7 @@ The advanced (or complete) configuration, in addition, contains two sliders that
 These two parameters are necessary to work well on every device, because their value depend on device hardware or settings.
 
 ### Lateral panel
-The lateral panel is the section dedicated to the management of the tracks inside the database. 
-
-It is composed, from the top to the bottom, by:
+The lateral panel is the interface part dedicated to the management of the tracks inside the database. It is composed by different sections with different funcitonalities. Specifically, from the top to the bottom, we can find: 
 
 <img align="left" width = "190" src="images/Lateral_panel.png" />
  
