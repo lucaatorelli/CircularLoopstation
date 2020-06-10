@@ -56,15 +56,15 @@ The lateral panel is the interface part dedicated to the management of the track
 
 <img align="left" width = "180" src="images/Lateralpanel.png" />
 
-- Title ("<ins>Saved Tracks</ins>"): by clicking on it the GDrive folder that contains all the stored traks will be opened,
+- Title ("<ins>Saved Tracks</ins>"): link to the GDrive folder that contains all the stored tracks,
  
-- Tracks container: in this section there are all the tracks stored in Firebase, on mouse on will appear below all the rhythm       information about the selected track. When user uploads any tracks by "load files" section, the corrisponding button will change color, and on click it will import the trak in the Circle.
+- Tracks container: in this section there are all the tracks stored in the database. Positioning the mouse pointer over one of the tracks, all the rhythm information about the selected item will be displayed. Whenever the user uploads here any tracks using the "Select file" input, the corrisponding button will change color, and by clicking on it the application will import the track into the loop.
  
 - Info section: contains data messages of the selected track,
  
-- Load files: input that allow the user to import external files,
+- "Select file": input that allows the user to upload external files into the database,
  
-- Instruction section: contains istructions about loading and advanced settings.
+- Instruction section: displays istructions about loading and advanced settings.
 
 <br/><br/><br/>
 
