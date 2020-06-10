@@ -60,7 +60,7 @@ The lateral panel is the interface part dedicated to the management of the track
  
 - Tracks container: in this section there are all the tracks stored in the database. Positioning the mouse pointer over one of the tracks, all the rhythm information about the selected item will be displayed. Whenever the user uploads here any tracks using the "Select file" input, the corrisponding button will change color, and by clicking on it the application will import the track into the loop.
  
-- Info section: contains data messages of the selected track,
+- Info section: displays the rhytm parameters of the selected track,
  
 - "Select file": input that allows the user to upload external files into the database,
  
