@@ -52,10 +52,10 @@ The advanced (or complete) configuration, in addition, contains two sliders that
 These two parameters are necessary to work well on every device, because their value depend on device hardware or settings.
 
 ### Lateral panel
+The lateral panel is the interface part dedicated to the management of the tracks inside the database. It is composed by different sections with different funcitonalities. Specifically, from the top to the bottom, we can find: 
+
 <img align="left" width = "180" src="images/Lateralpanel.png" />
 
-The lateral panel is the interface part dedicated to the management of the tracks inside the database. It is composed by different sections with different funcitonalities. Specifically, from the top to the bottom, we can find: 
- 
 - Title ("<ins>Saved Tracks</ins>"): by clicking on it the GDrive folder that contains all the stored traks will be opened,
  
 - Tracks container: in this section there are all the tracks stored in Firebase, on mouse on will appear below all the rhythm       information about the selected track. When user uploads any tracks by "load files" section, the corrisponding button will change color, and on click it will import the trak in the Circle.
@@ -65,8 +65,6 @@ The lateral panel is the interface part dedicated to the management of the track
 - Load files: input that allow the user to import external files,
  
 - Instruction section: contains istructions about loading and advanced settings.
-
-<br/><br/>
 
 ### Audio banners
 
