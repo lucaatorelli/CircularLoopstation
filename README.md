@@ -29,7 +29,7 @@ CircularLoopstation allows the visualization of the rythmic structure thanks to 
 ### The Circle
 
 ### Control box
-The control box is the component with which the user can control the loopstation and set recording parameters. It has two main configurations: a simpler one and an advanced one.
+The control box is the component with which the user can control the loopstation and set recording parameters. It has two main configurations: a simpler one and an advanced (or complete) one.
 At the bottom of the control box appears warning messages and is visualized the metronome while recording.
 <p align="center"><img aling="center" src="images/Control box.png" /></p>
 
