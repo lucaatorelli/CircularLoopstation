@@ -29,6 +29,22 @@ CircularLoopstation allows the visualization of the rythmic structure thanks to 
 ### The Circle
 
 ### Control box
+<img align="center" width = "150" src="images/Control box.png" />
+
+The control box contains has 2 statements, simple and advanced.
+Simple state contains three buttons:
+- Recording: that allow to start recording,
+- Play All: that allow to play all traks together,
+- Reset: that stop every track and circles movement while the loop is plaing.
+It also contains 4 numeric parameter section:
+- Numerator of time signature,
+- Denominator of time signature,
+- BPM, beats per minute, or rather tempo velocity,
+- Number of measure.
+The advanced state in addition contains two parameters that are aviable by clicking on the white circle, these are:
+- Manual Synch Value (100 ms by default): while recording, allows the user to set the gap between the played tracks and the recording;
+- Recording latency: (50 ms by default): can adjust the gap between the ideal recording start time and the effective recording start time;
+This command are necessary to work well on every device, cause these lengths depend by device hardware or settings.
 
 ### Lateral panel
 <img align="left" width = "150" src="images/Screenshot (2011).png" />
