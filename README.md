@@ -35,7 +35,7 @@ The Circle is the main component of the application, from wich the name "Circula
 
 The lengths of the colored sectors are calculated in such a way that each track represents an integer divisor of the length of the whole loop, in constant relation with the length of the other tracks. This way, the duration of the whole loop is ideally represented by a circular crown sector of 360°, that is the entire circumference of The Circle (please note that with "whole length of the loop" here is intended the time after wich all the tracks of the loop restart from the beginning at the same time). The size of each circular crown sector is computed each time a new track is imported into the loop, on the basis of the rythm parameters of the newest track and the previous imported ones.
 
-Attached to this component the user can find colored fractions that keep time of the playing tracks, according with their time signature.  
+Attached to this component the user can find colored fractions that keep time of the playing tracks in real time, according with their time signature. The black fraction, located at the top right of the page, indicates the equivalent in time signature of the length of the whole loop, and it also keep time of the whole loop in real time while playing.
 
 ### Control box
 The control box is the component with which the user can control the loopstation and set recording parameters. It has two main configurations: a simpler one and an advanced (or complete) one.
