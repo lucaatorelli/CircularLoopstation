@@ -33,6 +33,10 @@ The Circle is the main component of the application, from wich the name "Circula
 
 <p align="center"><img aling="center" width = "600" src="images/The Circle.png" /></p>
 
+The lengths of the colored sectors are calculated in such a way that each track represents an integer divisor of the length of the whole loop, in constant relation with the length of the other tracks. This way, the duration of the whole loop is ideally represented by a circular crown sector of 360° (the entire circumference of The Circle). The size of each circular crown sector is computed each time a new track is imported into the loop, on the basis of the rythm parameters of the newest track and the previous imported ones.
+
+
+
 ### Control box
 The control box is the component with which the user can control the loopstation and set recording parameters. It has two main configurations: a simpler one and an advanced (or complete) one.
 At the bottom of the control box appear warning messages and is visualized the metronome while recording.
