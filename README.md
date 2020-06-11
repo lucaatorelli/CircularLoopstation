@@ -125,11 +125,9 @@ However, it's not possible to import every kind of file into the loop, because t
 The developement of CircularLoopstation has been a really challenging and exciting task. Along with the complexity in managing the  polyrythmic problem, lots of ideas and solutions came out. We hope that this application will suggest the developement of more sophisticated tools that could exploit this circular visualization of polyrhytmic structures, as part of a new, creative and innovtive support for musicians and composers. 
 
 ## 4.1. Contacts
+Send us a feeedback at: actamproject@gmail.com
+
 - Gioele Greco: 
 - Luca Torelli: luca1.torelli@mail.polimi.it
-
-</br>
-
-Send a feeedback at: actamproject@gmail.com
 
 Music and Acoustic Engineering - Politecnico di Milano, Italy.
