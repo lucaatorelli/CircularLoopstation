@@ -78,7 +78,7 @@ The lateral panel is the interface part dedicated to the management of the track
 <br/><br/><br/><br/>
 
 ### Audio banners
-<p align="center"><img aling="center" src="images/Banner.jpeg" /></p>
+<p align="center"><img aling="center" src="images/Banner.png" /></p>
 
 ## Tracks management
 The application provides two ways for importing an audio track into the loop:
