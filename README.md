@@ -33,7 +33,7 @@ The Circle is the main component of the application, from wich the name "Circula
 
 <p align="center"><img aling="center" width = "600" src="images/The Circle.png" /></p>
 
-The lengths of the colored sectors are calculated in such a way that each track represents an integer divisor of the length of the whole loop, in constant relation with the length of the other tracks. This way, the duration of the whole loop is ideally represented by a circular crown sector of 360°, that is the entire circumference of The Circle (please note that with "whole length of the loop" here is intended the time after wich all the tracks of the loop restart from the beginning at the same time). The size of each circular crown sector is computed each time a new track is imported into the loop, on the basis of the rythm parameters of the newest track and the previous imported ones.
+The lengths of the colored sectors are calculated in such a way that each track represents an integer divisor of the length of the whole loop, in constant relation with the length of the other tracks. This way, the duration of the whole loop is ideally represented by a circular crown sector of 360°, that is the entire circumference of The Circle (please note that with "whole length of the loop" here is intended the time after wich all the tracks of the loop restart from the beginning at the same time). The size of each circular crown sector is computed each time a new track is imported into the loop (or deleted), on the basis of the rythm parameters of the newest track and the previous imported ones.
 
 Attached to this component the user can find colored fractions that keep time of the playing tracks in real time, according with their time signature. The black fraction, located at the top right of the page, indicates the equivalent in time signature of the length of the whole loop, and it also keep time of the whole loop in real time while playing.
 
@@ -78,7 +78,15 @@ The lateral panel is the interface part dedicated to the management of the track
 <br/><br/><br/><br/>
 
 ### Audio banners
+Every time an audio track is imported into the loopstation, a colored banner is created beneath the control box.
+
 <p align="center"><img aling="center" src="images/Banner.png" /></p>
+
+Inside the banner the user can find the audio clip (with play/pause button and volume slider), the name of the track and two buttons:
+
+- Load on Firebase: load the selected track into the database, following the procedure described in the next section. Of course this button is not present when an audio track is imported into the loop from the database itself.
+
+- Delete: delete the selected track and the corresponding circle.
 
 ## Tracks management
 The application provides two ways for importing an audio track into the loop:
