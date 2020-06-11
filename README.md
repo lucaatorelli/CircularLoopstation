@@ -1,3 +1,10 @@
+---
+title: "My Report"
+output: 
+  html_document:
+    number_sections: true
+---
+
 <p align="center"><img aling="center" width = "100%" src="images/Banner_Cil.jpeg" /></p>
 
 # 1.Introduction
