@@ -26,7 +26,11 @@ This composing technique is called ***"polyrhythmic"*** and its meter is called 
 CircularLoopstation allows the visualization of the rythmic structure thanks to a clock-like graphic component that follows the progression of the loop and shows the alternation of all the audio tracks that have been uploaded into the loop. The loopstation is designed to be able to manage and visualize different signatures and durations at the same time, ensuring a simple but powerful understanding of the underlying structure of the cycle.
 
 ## Graphic components
+Circular Loopstation comes with a simple and colored graphic interface, that allows the user to build and interact with the loop in an intuitive manner.
+
 ### The Circle
+The Circle is the main component of the application, from wich the name "CircularLoopstation" itself derives. It looks like a clock-like graphic component in which is shown the superposition and the progression of all the tracks that are present in the loop, represented as colored circular crown sectors.
+
 <p align="center"><img aling="center" width = "600" src="images/The Circle.png" /></p>
 
 ### Control box
