@@ -128,4 +128,5 @@ The developement of CircularLoopstation has been a really challenging and exciti
 - Gioele Greco: 
 - Luca Torelli: luca1.torelli@mail.polimi.it
 
+Send a feeedback at: actamproject@gmail.com
 Music and Acoustic Engineering - Politecnico di Milano, Italy.
