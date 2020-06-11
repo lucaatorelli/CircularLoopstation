@@ -1,4 +1,4 @@
-<div style="text-align:center"><img src="images/Banner_Cil.jpeg" /></div>
+<p align="center"><img aling="center" src="images/Banner_Cil.jpeg" /></p>
 
 # Introduction
 CircularLoopstation is a web application developed for musician and composers that aims to assist them in the visualization of complex polyrhythmic structures through the design of an innovative loopstation. The application comes with various controls and graphic features that give to the user a large number of possibilities in the construction of his own loop.
@@ -27,6 +27,7 @@ CircularLoopstation allows the visualization of the rythmic structure thanks to 
 
 ## Graphic components
 ### The Circle
+<p align="center"><img aling="center" src="images/The Circle.png" /></p>
 
 ### Control box
 The control box is the component with which the user can control the loopstation and set recording parameters. It has two main configurations: a simpler one and an advanced (or complete) one.
