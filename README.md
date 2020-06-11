@@ -66,7 +66,7 @@ The lateral panel is the interface part dedicated to the management of the track
  
 - Instruction section: displays istructions about loading and advanced settings.
 
-<br/><br/><br/>
+<br/><br/><br/><br/>
 
 ### Audio banners
 
