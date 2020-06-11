@@ -84,7 +84,7 @@ Every time an audio track is imported into the loopstation, a colored banner is 
 
 Inside the banner the user can find the audio clip (with play/pause button and volume slider), the name of the track and two buttons:
 
-- Load on Firebase: load the selected track into the database, following the procedure described in the next section. Of course this button is not present when an audio track is imported into the loop from the database itself.
+- Load on Firebase: load the selected track into the database, following the procedure described in the section 3.2.2. Of course this button is not present when an audio track is imported into the loop from the database itself.
 
 - Delete: delete the selected track and the corresponding circle.
 
