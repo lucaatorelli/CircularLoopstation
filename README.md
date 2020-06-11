@@ -29,7 +29,7 @@ CircularLoopstation allows the visualization of the rythmic structure thanks to 
 Circular Loopstation comes with a simple and colored graphic interface, that allows the user to build and interact with the loop in an intuitive manner.
 
 ### The Circle
-The Circle is the main component of the application, from wich the name "CircularLoopstation" itself derives. It looks like a clock-like graphic component in which is shown the superposition and the progression of all the tracks that are present in the loop, represented as colored circular crown sectors.
+The Circle is the main component of the application, from wich the name "CircularLoopstation" itself derives. It looks like a clock-like graphic component in which is shown the superposition and the real time progression of all the tracks that are present in the loop, represented as colored circular crown sectors.
 
 <p align="center"><img aling="center" width = "600" src="images/The Circle.png" /></p>
 
