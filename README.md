@@ -27,7 +27,7 @@ CircularLoopstation allows the visualization of the rythmic structure thanks to 
 
 ## Graphic components
 ### The Circle
-<p align="center"><img aling="center" src="images/The Circle.png" /></p>
+<p align="center"><img aling="center" width = "100" src="images/The Circle.png" /></p>
 
 ### Control box
 The control box is the component with which the user can control the loopstation and set recording parameters. It has two main configurations: a simpler one and an advanced (or complete) one.
