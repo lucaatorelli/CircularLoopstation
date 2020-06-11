@@ -1,6 +1,6 @@
 <p align="center"><img aling="center" width = "100%" src="images/Banner_Cil.jpeg" /></p>
 
-# Introduction
+# 1.Introduction
 CircularLoopstation is a web application developed for musician and composers that aims to assist them in the visualization of complex polyrhythmic structures through the design of an innovative loopstation. The application comes with various controls and graphic features that give to the user a large number of possibilities in the construction of his own loop.
 
 The application is developed by Gioele Greco and Luca Torelli, as part of the Advanced Coding Tools & Methodologies course at Politecnico di Milano, Italy.
@@ -8,7 +8,7 @@ The application is developed by Gioele Greco and Luca Torelli, as part of the Ad
 - CircularLoopstation is available at: https://circloopstation.surge.sh/
 - Link to CodePen: https://codepen.io/Torelli/pen/mdVVwpp
 
-# Behind the concept
+# 2.Behind the concept
 Everyone says "music is made of rhythmic sound", so what is rhythm?
 
 Rhythm in music is characterized by a repeating sequence of stressed (strong) and unstressed (weak) beats, and it's divided into bars organized by time signature and tempo indications.
@@ -22,13 +22,13 @@ Since XX century, expecially in contempourary music and following in jazz and ot
 
 This composing technique is called ***"polyrhythmic"*** and its meter is called polymeter.
 
-# The loopstation
+# 3.The loopstation
 CircularLoopstation allows the visualization of the rythmic structure thanks to a clock-like graphic component that follows the progression of the loop and shows the alternation of all the audio tracks that have been uploaded into the loop. The loopstation is designed to be able to manage and visualize different signatures and durations at the same time, ensuring a simple but powerful understanding of the underlying structure of the cycle. The application provides two ways of importing audio tracks into the loopstation, allowing the user to easily create its own customizable musical loop. 
 
-## Graphic components
+## 3.1.Graphic components
 Circular Loopstation comes with a simple and colored graphic interface that allows the user to build and interact with the loop in an intuitive and creative manner. Let's see what this graphic interface is composed of.
 
-### The Circle
+### 3.1.1.The Circle
 The Circle is the main component of the application, from wich the name "CircularLoopstation" itself derives. It looks like an animated clock-like graphic component in which is shown the superposition and the real time progression of all the tracks that are present in the loop, represented as colored circular crown sectors.
 
 <p align="center"><img aling="center" width = "600" src="images/The Circle.png" /></p>
@@ -37,7 +37,7 @@ The lengths of the colored sectors are calculated in such a way that each track 
 
 Attached to this component the user can find colored fractions that keep time of the playing tracks in real time, according with their time signature. The black fraction, located at the top right of the page, indicates the equivalent in time signature of the length of the whole loop, and it also keep time of the whole loop in real time while playing.
 
-### Control box
+### 3.1.2.Control box
 The control box is the component with which the user can control the loopstation and set recording parameters. It has two main configurations: a simpler one and an advanced (or complete) one.
 At the bottom of the control box appear warning messages and is visualized the metronome while recording.
 <p align="center"><img aling="center" src="images/Control box.png" /></p>
@@ -60,7 +60,7 @@ The advanced (or complete) configuration, in addition, contains two sliders that
 
 These two parameters are necessary to work well on every device, because their value depend on device hardware or settings.
 
-### Lateral panel
+### 3.1.3.Lateral panel
 The lateral panel is the interface part dedicated to the management of the tracks inside the database. It is composed by different sections with different funcitonalities. Specifically, from the top to the bottom, we can find: 
 
 <img align="left" width = "180" src="images/Lateralpanel.png" />
@@ -77,7 +77,7 @@ The lateral panel is the interface part dedicated to the management of the track
 
 <br/><br/><br/><br/>
 
-### Audio banners
+### 3.1.4.Audio banners
 Every time an audio track is imported into the loopstation, a colored banner is created beneath the control box.
 
 <p align="center"><img aling="center" src="images/Banner.png" /></p>
@@ -88,10 +88,10 @@ Inside the banner the user can find the audio clip (with play/pause button and v
 
 - Delete: delete the selected track and the corresponding circle.
 
-## Tracks management
+## 3.2.Tracks management
 The application provides two ways for importing an audio track into the loop:
 
-### Audio recording
+### 3.2.1.Audio recording
 The first tool that have been developed for the creation of an audio track is a simple audio recorder. The user can choose all the parameters that are necessary to compute the length of the recording (time signature, bpm, number of measures) by setting their values into the control box. Then, when the button "Record" is clicked, a metronome will start beating inside the control box according with the time settings chosen by the user. A colored circular crown sector will also appear around The Circle, indicating the contribution of the recorded track to the whole loop.
 
 After two beating measures, the recording session will start, announced by the indicator light that will turn red. The recording session will end by itself once reached the computed recording length. The user can stop the recording at any moment by pressing the "esc" button.
@@ -100,7 +100,7 @@ As the registration is ended, the application asks to the user to set a name for
 
 This system allows the user to record a lot of different tracks and to visualize their superposition by simply looking at the graphic clock-like component.
 
-### Uploading from database
+### 3.2.2.Uploading from database
 CircularLoopstation can also import files into the loopstation from a database, that can be enlarged by every user by uploading tracks with the "Load on Firebase" button.
 
 How can I import files in CircularLoopstation? *(Instructions are in the side panel)*
@@ -121,7 +121,7 @@ The files stored in the database are managed by the administrator, and can be de
 
 However, it's not possible to import every kind of file into the loop, because the application, to work well, needs some parameters like duration, time signature and bpm. To do so, the trick is to record a track with the same file name and the correct parameters, click on "Load on Firebase", and upload the desired file instead of the recording. 
 
-# Notes
+# 4.Notes
 
-## Further developements
-## Contacts
+## 4.1.Further developements
+## 4.2.Contacts
