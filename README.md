@@ -123,5 +123,11 @@ However, it's not possible to import every kind of file into the loop, because t
 
 # 4. Notes
 
+exciting
+
 ## 4.1. Further developements
 ## 4.2. Contacts
+- Gioele Greco: 
+- Luca Torelli: luca1.torelli@mail.polimi.it
+
+Music and Acoustic Engineering, Politecnico di Milano, Italy.
