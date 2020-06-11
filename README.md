@@ -23,10 +23,10 @@ Since XX century, expecially in contempourary music and following in jazz and ot
 This composing technique is called ***"polyrhythmic"*** and its meter is called polymeter.
 
 # The loopstation
-CircularLoopstation allows the visualization of the rythmic structure thanks to a clock-like graphic component that follows the progression of the loop and shows the alternation of all the audio tracks that have been uploaded into the loop. The loopstation is designed to be able to manage and visualize different signatures and durations at the same time, ensuring a simple but powerful understanding of the underlying structure of the cycle.
+CircularLoopstation allows the visualization of the rythmic structure thanks to a clock-like graphic component that follows the progression of the loop and shows the alternation of all the audio tracks that have been uploaded into the loop. The loopstation is designed to be able to manage and visualize different signatures and durations at the same time, ensuring a simple but powerful understanding of the underlying structure of the cycle. The application provides two ways of importing audio tracks into the loopstation, allowing the user to easily create its own customizable musical loop. 
 
 ## Graphic components
-Circular Loopstation comes with a simple and colored graphic interface, that allows the user to build and interact with the loop in an intuitive manner.
+Circular Loopstation comes with a simple and colored graphic interface that allows the user to build and interact with the loop in an intuitive and creative manner. Let's see what this graphic interface is composed of.
 
 ### The Circle
 The Circle is the main component of the application, from wich the name "CircularLoopstation" itself derives. It looks like an animated clock-like graphic component in which is shown the superposition and the real time progression of all the tracks that are present in the loop, represented as colored circular crown sectors.
@@ -83,7 +83,7 @@ The lateral panel is the interface part dedicated to the management of the track
 The application provides two ways for importing an audio track into the loop:
 
 ### Audio recording
-The first tool that have been developed for the creation of an audio track is a simple audio recorder. The user can choose all the parameters that are necessary to compute the length of the recording (time signature, bpm, number of measures) by setting their values into the control box. Then, when the button "Record" is clicked, a metronome will start beating inside the control box according with the time settings chosen by the user. A colored circular crown sector will also appear around the clock-like structure, indicating the contribution of the recorded track to the whole loop.
+The first tool that have been developed for the creation of an audio track is a simple audio recorder. The user can choose all the parameters that are necessary to compute the length of the recording (time signature, bpm, number of measures) by setting their values into the control box. Then, when the button "Record" is clicked, a metronome will start beating inside the control box according with the time settings chosen by the user. A colored circular crown sector will also appear around The Circle, indicating the contribution of the recorded track to the whole loop.
 
 After two beating measures, the recording session will start, announced by the indicator light that will turn red. The recording session will end by itself once reached the computed recording length. The user can stop the recording at any moment by pressing the "esc" button.
 
