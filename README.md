@@ -126,6 +126,7 @@ The developement of CircularLoopstation has been a really challenging and exciti
 
 ## 4.1. Contacts
 Send us a feeedback at: actamproject@gmail.com
+
 Or contact us personally:
 
 - Gioele Greco: 
