@@ -122,12 +122,10 @@ The files stored in the database are managed by the administrator, and can be de
 However, it's not possible to import every kind of file into the loop, because the application, to work well, needs some parameters like duration, time signature and bpm. To do so, the trick is to record a track with the same file name and the correct parameters, click on "Load on Firebase", and upload the desired file instead of the recording. 
 
 # 4. Notes
+The developement of CircularLoopstation has been a really challenging and exciting task. Along with the complexity in managing the  polyrythmic problem, lots of ideas and solutions came out. We hope that this application will suggest the developement of more sophisticated tools that could exploit this circular visualization of polyrhytmic structures, as part of a new, creative and innovtive support for musicians and composers. 
 
-exciting
-
-## 4.1. Further developements
-## 4.2. Contacts
+## 4.1. Contacts
 - Gioele Greco: 
 - Luca Torelli: luca1.torelli@mail.polimi.it
 
-Music and Acoustic Engineering, Politecnico di Milano, Italy.
+Music and Acoustic Engineering - Politecnico di Milano, Italy.
