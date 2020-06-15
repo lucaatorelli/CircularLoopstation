@@ -105,7 +105,7 @@ CircularLoopstation can also import files into the loopstation from a database, 
 
 How can I import files in CircularLoopstation? *(Instructions are in the side panel)*
 
-- Click on "Saved Traks" and download the GDrive folder or single files.
+- Click on "Saved Tracks" and download the GDrive folder or single files.
 
 - Unzip the folder and upload it using "select file".
 
