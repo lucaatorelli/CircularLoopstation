@@ -18,7 +18,7 @@ Tempo indication denotes how long is the beat distance. It's defined in beat per
 
 Time signature, normally, is based on fraction of 2 or 3. It's common to read on partitures quavers, triplets (3 notes played in the time of 2 equivalent notes), or multiple and submultiples of 2 and 3.
 
-Since XX century, expecially in contempourary music, with ethnic influences, and following in jazz and other genres, the composers decides to use more complex rhythms, like 13/16 or 7/13 and so on, played simultaneously. This to create an extraordinary exotic effect of cycles in cycles that can create changing harmonies with the same material. Today this technique is well known to mathphilus composers, who write their music without be anchored to the same metric subdivision.
+Since XX century, expecially in contempourary music with ethnic influences, and following in jazz and other genres, the composers decides to use more complex rhythms, like 13/16 or 7/13 and so on, played simultaneously. This to create an extraordinary exotic effect of cycles in cycles that can create changing harmonies with the same material. Today this technique is well known to mathphilus composers, who write their music without be anchored to the same metric subdivision.
 
 This composing technique is called ***"polyrhythmic"*** and its meter is called polymeter.
 
