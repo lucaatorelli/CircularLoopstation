@@ -39,6 +39,8 @@ Attached to this component the user can find colored fractions that keep time of
 
 How is that fraction computed?
 
+Considering N as the number of tracks in the loop:
+
 <p align="center"><img aling="center" width = "600" src="images/fraction.png" /></p>
 
 ### 3.1.2. Control box
