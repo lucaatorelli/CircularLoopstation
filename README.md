@@ -39,7 +39,7 @@ Attached to this component the user can find colored fractions that keep time of
 
 How is that fraction computed?
 
-Considering th fraction as NUM/DEN, and N as the number of tracks in the loop:
+Considering the fraction as NUM/DEN, and N as the number of tracks in the loop:
 
 ![](images/fraction.png)
 
