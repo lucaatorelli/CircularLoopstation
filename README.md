@@ -106,7 +106,7 @@ After two beating measures, the recording session will start, announced by the i
 
 The recording session will end by itself once reached the computed recording length, previously calculated as follow:
 
-<p align="center"><img aling="center" src="images/REC.png" /></p>
+<p align="center"><img aling="center" src="images/length.png" /></p>
 
 The user can stop the recording at any moment by pressing the "esc" button.
 
