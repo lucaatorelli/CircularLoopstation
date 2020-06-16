@@ -104,7 +104,7 @@ After two beating measures, the recording session will start, announced by the i
 
 <p align="center"><img aling="center" width = "60%" src="images/REC.png" /></p>
 
-The recording session will end by itself once reached the computed recording length, previously calculated as follow:
+The recording session will end by itself once reached the computed recording length (in seconds), previously calculated as follow:
 
 <p align="center"><img aling="center" width = "25%" src="images/length.png" /></p>
 
