@@ -102,6 +102,8 @@ The first tool that have been developed for the creation of an audio track is a 
 
 After two beating measures, the recording session will start, announced by the indicator light that will turn red. The recording session will end by itself once reached the computed recording length. The user can stop the recording at any moment by pressing the "esc" button.
 
+<p align="center"><img aling="center" width = "100%" src="images/REC.png" /></p>
+
 As the registration is ended, the application asks to the user to set a name for the recorded sound clip. After that, the audio clip will be visible as a colored banner beneath the control box.
 
 This system allows the user to record a lot of different tracks and to visualize their superposition by simply looking at the graphic clock-like component.
