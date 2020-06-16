@@ -100,9 +100,15 @@ The application provides two ways for importing an audio track into the loop:
 ### 3.2.1. Audio recording
 The first tool that have been developed for the creation of an audio track is a simple audio recorder. The user can choose all the parameters that are necessary to compute the length of the recording (time signature, bpm, number of measures) by setting their values into the control box. Then, when the button "Record" is clicked, a metronome will start beating inside the control box according with the time settings chosen by the user. A colored circular crown sector will also appear around The Circle, indicating the contribution of the recorded track to the whole loop.
 
-After two beating measures, the recording session will start, announced by the indicator light that will turn red. The recording session will end by itself once reached the computed recording length. The user can stop the recording at any moment by pressing the "esc" button.
+After two beating measures, the recording session will start, announced by the indicator light that will turn red.
 
 <p align="center"><img aling="center" width = "60%" src="images/REC.png" /></p>
+
+The recording session will end by itself once reached the computed recording length, previously calculated as follow:
+
+
+
+The user can stop the recording at any moment by pressing the "esc" button.
 
 As the registration is ended, the application asks to the user to set a name for the recorded sound clip. After that, the audio clip will be visible as a colored banner beneath the control box.
 
