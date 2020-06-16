@@ -37,6 +37,10 @@ The lengths of the colored sectors are calculated in such a way that each track 
 
 Attached to this component the user can find colored fractions that keep time of the playing tracks in real time, according with their time signature. The black fraction, located at the top right of the page, indicates the equivalent in time signature of the length of the whole loop, and it also keep time of the whole loop in real time while playing.
 
+How is that fraction computed?
+
+<p align="center"><img aling="center" width = "600" src="images/fraction.png" /></p>
+
 ### 3.1.2. Control box
 The control box is the component with which the user can control the loopstation and set recording parameters. It has two main configurations: a simpler one and an advanced (or complete) one.
 At the bottom of the control box appear warning messages and is visualized the metronome while recording.
