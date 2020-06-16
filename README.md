@@ -39,9 +39,9 @@ Attached to this component the user can find colored fractions that keep time of
 
 How is that fraction computed?
 
-Considering N as the number of tracks in the loop:
+Considering th fraction as NUM/DEN, and N as the number of tracks in the loop:
 
-<p align="center"><img aling="center" width = "600" src="images/fraction.png" /></p>
+<p align="center"><img aling="left" width = "600" src="images/fraction.png" /></p>
 
 ### 3.1.2. Control box
 The control box is the component with which the user can control the loopstation and set recording parameters. It has two main configurations: a simpler one and an advanced (or complete) one.
