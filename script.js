@@ -409,6 +409,9 @@ function popola() {
               BPM +
               "bpm, please set the same bpm value "
           );
+          if (audioi.length == 0){
+            xmlname3.disabled = false;
+          }
           return;
         }
         var N = Utility[2];
@@ -718,8 +721,8 @@ if (navigator.mediaDevices.getUserMedia) {
         }
 
         function stoprecorder() {
-          stopall.disabled=false;
           mediaRecorder.stop();
+          stopall.disabled=false;
           stopall.click();
           ln.style.animation = "";
           mask.style.animation = "";
@@ -768,7 +771,7 @@ if (navigator.mediaDevices.getUserMedia) {
             stoprecorder();
           }
         }, length * 1000 + (length * 1000 * 2) / N + latency);
-
+        
         //Abort the recording with esc button
         $("a[name=close]").click(function () {
           var e = jQuery.Event("keyup"); // or keypress/keydown
@@ -1224,3 +1227,11 @@ function controlloBrow() {
   }
 }
 controlloBrow();
+
+$("form").keypress(function(e) {
+  //Enter key
+  if (e.which == 13) {
+    bttn.click();
+    return false;
+  }
+});
