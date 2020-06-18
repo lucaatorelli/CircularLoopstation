@@ -981,7 +981,7 @@ if (navigator.mediaDevices.getUserMedia) {
 //===================PLAY AND STOP FUNCTIONS===================
 function setVolume(el) {
   var track = document.querySelectorAll("audio");
-  var gain = 100 - 7 * (track.length - 1);
+  var gain = 100 - 10 (track.length - 1);
   el.volume = (1 * gain) / 100;
 }
 
