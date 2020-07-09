@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - CircularLoopstation1.1bugfixed</title>
+  <title>CodePen - CircularLoopstation2.1</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -31,7 +31,9 @@
   </div>
 </div>
 <div id="freg" style="display: none;"> FREGHETE! </div>
+
 <div id="BFNcont">
+
   <div class="BFN" id="sar"> </div>
 </div>
 
@@ -69,12 +71,16 @@
       Number of measures:
       <input type="number" name="xmlname" id="xmlname4" min="1" value="1">
     </form>
+    <div id="cont3" style="position: relative;">
+      <p id="text" style="display: inline;">Hide metric subdivision</p><input type="checkbox" id="myCheck" style="position : relative; top: 0px; zoom:1.5;" onclick="CheckFunction()">
+    </div>
     <div id="cont1" style="display: none;">
+      <div class="line"></div>
       <div class="slidecontainer">
         <div class="tooltip">
           Manual Synch Value:
           <span class="tooltiptext">
-            These values depend on your system parameters, set them manually by recording a reference track and allineate the next recordings.
+            These values depend on your system parameters, set the manually by recording a reference track and allineate the next recordings.
           </span>
           <span id="demo"></span>
         </div>
@@ -88,18 +94,52 @@
         </div>
         <input type="range" min="-100" max="512" value="50" class="slider" id="Latency">
       </div>
+      <div> Dimensions</div>
+      <div class="cont4" style="display: flex;">
+        <div class="slidecontainer" style="width: 33%">
+          <div class="tooltip" style="font-size: 12px;">
+            The Circle:
+            <span class="tooltiptext">
+            </span>
+            <span id="demoD"></span>
+          </div>
+          <input type="range" min="100" max="5000" value="1000" class="slider" id="dimensioni">
+        </div>
+        <div class="slidecontainer" style="width: 33%">
+          <div class="tooltip" style="font-size: 12px;">
+            Control box:
+            <span class="tooltiptext">
+            </span>
+            <span id="demoD1"></span>
+          </div>
+          <input type="range" min="500" max="2000" value="1000" class="slider" id="dimensioni1">
+        </div>
+        <div class="slidecontainer" style="width: 33%">
+          <div class="tooltip" style="font-size: 12px;">
+            Sound tracks:
+            <span class="tooltiptext">
+            </span>
+            <span id="demoD2"></span>
+          </div>
+          <input type="range" min="300" max="2000" value="1000" class="slider" id="dimensioni2">
+        </div>
+      </div>
     </div>
+
     <div id="container" style="min-height: 60px; display: none;"></div>
 
   </div>
 
 </div>
 
-<section class="sound-clips" style="margin-left: 20%; margin-right:20%;">
+<section class="sound-clips" id="soundClips">
 </section>
 <div class="crediti" style="font-size: 10px; position: fixed; margin-left: 20px;
     bottom: 0;
-    left: 0;">Developed by: <br>Gioele Greco & Luca Torelli</div>
+    left: 0;">Developed by: <br>Gioele Greco & Luca Torelli <br> v. 2.1</div>
+<div class="crediti" id="contMess" style="font-size: 15px; position: fixed; width: 18%;
+    bottom: 15px;
+    right: 5px; display: none;">Click here to download, to share with other users and online storage. Load on drive in the window that will appear</div>
 <a href="mailto:actamproject@gmail.com?subject = Feedback&body = Message" style="font-size: 10px; position: fixed; margin-left: 20px;
     bottom: 0;
     right: 10px;">

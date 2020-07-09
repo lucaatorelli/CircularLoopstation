@@ -42,9 +42,15 @@ var slider = document.getElementById("myRange");
 var slider2 = document.getElementById("Latency");
 var output = document.getElementById("demo");
 var outL = document.getElementById("demoL");
-output.innerHTML = slider.value + " ms"; // Display the default slider value
+var outD=document.getElementById("demoD");
+var outD1=document.getElementById("demoD1");
+var outD2=document.getElementById("demoD2");
+output.innerHTML = slider.value + " ms"; 
+// Display the default slider value
 outL.innerHTML = slider2.value + " ms";
-// Update the current slider value (each time you drag the slider handle)
+outD.innerHTML = dimensioni.value/1000;
+outD1.innerHTML = dimensioni1.value/1000;
+outD2.innerHTML = dimensioni2.value/1000;
 slider.oninput = function () {
   output.innerHTML = this.value + " ms";
   loadTime = this.value;
@@ -53,8 +59,38 @@ slider2.oninput = function () {
   outL.innerHTML = this.value + " ms";
   latency = this.value;
 };
+dimensioni.oninput = function () {
+  outD.innerHTML = this.value/1000;
+ station_container.style.zoom = this.value/1000;
+};
+
+dimensioni1.oninput = function () {
+  outD1.innerHTML = this.value/1000;
+ controls.style.zoom = this.value/1000;
+};
+dimensioni2.oninput = function () {
+  outD2.innerHTML = this.value/1000;
+  soundClips.style.zoom = this.value/1000;
+};
+
 
 //=========================GRAPHIC FUNCTIONS=========================
+function CheckFunction() {
+  var checkBox = document.getElementById("myCheck");
+
+  function hidev(tu) {
+    tu.style.display = "none";
+  }
+  function showv(tu) {
+    tu.style.display = "";
+  }
+  if (checkBox.checked == true) {
+    document.querySelectorAll(".divisore").forEach(hidev);
+  } else {
+    document.querySelectorAll(".divisore").forEach(showv);
+  }
+}
+
 mask.onclick = function () {
   if (cont1.style.display == "block") {
     cont1.style = "display: none";
@@ -128,8 +164,42 @@ function lcm(beatn) {
   return lcmVector[0];
 }
 
+function darkness(colore) {
+  var r, g, b, hsp;
+  colore = "#" + colore;
+  colore = +("0x" + colore.slice(1).replace(colore.length < 5 && /./g, "$&$&"));
+  r = colore >> 16;
+  g = (colore >> 8) & 255;
+  b = colore & 255;
+  // HSP (Highly Sensitive Poo) equation from http://alienryderflex.com/hsp.html
+  hsp = Math.sqrt(0.299 * (r * r) + 0.587 * (g * g) + 0.114 * (b * b));
+  // Using the HSP value, determine whether the color is light or dark
+  if (hsp > 127.5) {
+    return "light";
+  } else {
+    return "dark";
+  }
+}
+
 //Circles generation
 function add_circle(arco, r, i) {
+  console.log(arco);
+  if (beats.length == 1) {
+    arco = 360;
+  }
+
+  for (k = 0; k < (beats[i][0] * 360) / arco; k++) {
+    el2 = document.createElement("div");
+    el2.classList.add("divisore");
+    station_container.prepend(el2);
+    el2.style.transform =
+      "translate(-50%, -100%) rotate(" +
+      (k * 360) / ((beats[i][0] * 360) / arco) +
+      "deg)";
+    el2.style.transformOrigin = "100% 100%";
+    el2.style.height = 150 + 25 * i + "px";
+  }
+
   el = document.createElement("div");
   el.classList.add("circle");
   station_container.prepend(el);
@@ -144,6 +214,9 @@ function add_circle(arco, r, i) {
   } else {
     //generate another random color
     var Rand = Math.random().toString(16).substr(2, 6);
+    while (darkness(Rand) == "dark") {
+      Rand = Math.random().toString(16).substr(2, 6);
+    }
     el.style.backgroundColor = "#" + Rand;
     colors[i] = Rand;
   }
@@ -169,6 +242,20 @@ function add_circle(arco, r, i) {
 }
 
 function reconstruct_circle(arco, r, i) {
+  if (beats.length == 1) {
+    arco = 360;
+  }
+  for (k = 0; k < (beats[i][0] * 360) / arco; k++) {
+    el2 = document.createElement("div");
+    el2.classList.add("divisore");
+    station_container.prepend(el2);
+    el2.style.transform =
+      "translate(-50%, -100%) rotate(" +
+      (k * 360) / ((beats[i][0] * 360) / arco) +
+      "deg)";
+    el2.style.transformOrigin = "100% 100%";
+    el2.style.height = 150 + 25 * i + "px";
+  }
   el = document.createElement("div");
   el.classList.add("circle");
   station_container.prepend(el);
@@ -199,6 +286,12 @@ function setup_circle() {
   for (i = 0; i < beats.length; i++) {
     el = station_container.querySelector(".circle");
     station_container.removeChild(el);
+  }
+
+  numerodivisori = document.querySelectorAll(".divisore").length;
+  for (k = 0; k < numerodivisori; k++) {
+    el2 = station_container.querySelector(".divisore");
+    station_container.removeChild(el2);
   }
   circles = [];
 }
@@ -323,20 +416,12 @@ function salva(Nome) {
 
 //Download functions
 function downInfo(el) {
-  container.style.display = "block";
-  var tes = document.createElement("div");
-  tes.classList.add("Info");
-  tes.style =
-    "text-size: 12px; color: black; position: relative; display: contents;";
-  tes.textContent =
-    "Click here to download, to share with other users and online storage. Load on drive in the window that will appear";
-  container.appendChild(tes);
+  contMess.style.display = "block";
   el.onmouseout = function () {
     setTimeout(function () {
-      container.removeChild(tes);
-      container.style.display = "none";
-    }, 1500);
-  };
+      contMess.style.display = "none";
+      }, 500);
+    }
 }
 
 function downloadURI(uri, name) {
@@ -409,7 +494,7 @@ function popola() {
               BPM +
               "bpm, please set the same bpm value "
           );
-          if (audioi.length == 0){
+          if (audioi.length == 0) {
             xmlname3.disabled = false;
           }
           return;
@@ -722,7 +807,7 @@ if (navigator.mediaDevices.getUserMedia) {
 
         function stoprecorder() {
           mediaRecorder.stop();
-          stopall.disabled=false;
+          stopall.disabled = false;
           stopall.click();
           ln.style.animation = "";
           mask.style.animation = "";
@@ -771,7 +856,7 @@ if (navigator.mediaDevices.getUserMedia) {
             stoprecorder();
           }
         }, length * 1000 + (length * 1000 * 2) / N + latency);
-        
+
         //Abort the recording with esc button
         $("a[name=close]").click(function () {
           var e = jQuery.Event("keyup"); // or keypress/keydown
@@ -979,14 +1064,9 @@ if (navigator.mediaDevices.getUserMedia) {
 }
 
 //===================PLAY AND STOP FUNCTIONS===================
-function setVolume(el) {
-  var track = document.querySelectorAll("audio");
-  var gain = 100 - 10 (track.length - 1);
-  el.volume = (1 * gain) / 100;
-}
+
 
 function parti(aud) {
-  setVolume(aud);
   aud.load();
   aud.play();
 }
@@ -1228,10 +1308,14 @@ function controlloBrow() {
 }
 controlloBrow();
 
-$("form").keypress(function(e) {
+$("form").keypress(function (e) {
   //Enter key
   if (e.which == 13) {
     bttn.click();
     return false;
   }
 });
+
+var checking = setInterval(function () {
+  CheckFunction();
+}, 20);

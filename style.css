@@ -6,6 +6,9 @@
 );
 @import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css);
 
+.crediti{
+  width: 20%;
+}
 /* BFN */
 #BFNcont {
   height: 100%;
@@ -50,6 +53,8 @@
 /* SLIDER ORIZZONTALI */
 .slidecontainer {
   width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .slider {
@@ -93,6 +98,7 @@ body {
 
 .page {
   width: 100%;
+  overflow: 
 }
 
 header {
@@ -241,6 +247,15 @@ header {
   transform: translate(-50%, -100%);
 }
 
+.divisore {
+  width: 1px;
+  height: 150px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
 .circle {
   position: absolute;
   top: 50%;
@@ -270,6 +285,7 @@ header {
 
 /*==================================================*/
 /* BUTTONS AND ELEMENTS */
+
 #buttons {
   display: inline-block;
   flex-direction: row;
@@ -368,9 +384,12 @@ canvas {
 /*==================================================*/
 /* AUDIO */
 .sound-clips {
+  margin-top: 5px;
   border-radius: 20px;
+  max-height: 300px;
+  width: 100%;
   flex: 1;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 section,
@@ -386,6 +405,8 @@ article {
 
 .clip {
   padding-bottom: 1rem;
+  width: 60%;
+  margin: auto;
 }
 
 audio {
