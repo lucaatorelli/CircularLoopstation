@@ -43,7 +43,7 @@ The lengths of the colored sectors are calculated in such a way that each track 
 
 With the leatest version of CircularLoopstation is also possible to visualize the metric subdivision of the looping structure thanks to radial segments that show the partition of each track in beats:
 
-<p align="center"><img aling="center" width = "400" src="images/Metric.png" /></p>
+<p align="center"><img aling="center" width = "200" src="images/Metric.png" /></p>
 
 Attached to this component the user can find colored fractions that keep time of the playing tracks in real time, according with their time signature. The black fraction, located at the top right of the page, indicates the equivalent in time signature of the length of the whole loop, and it also keep time of the whole loop in real time while playing.
 
