@@ -54,11 +54,11 @@ Considering the fraction as NUM/DEN, and N as the number of tracks in the loop:
 <p align="center"><img aling="center" width = "300" src="images/Metric.png" /></p>
 
 ### 3.1.2. Control box
-The control box is the component with which the user can control the loopstation and set recording parameters. It has two main configurations: a simpler one and an advanced (or complete) one.
+The control box is the component with which the user can control the loopstation and set recording parameters. It has two main configurations: a simpler one and a more advanced one.
 At the bottom of the control box appear warning messages and is visualized the metronome while recording.
 <p align="center"><img aling="center" src="images/CB2.png" /></p>
 
-The simpler configuration contains three buttons, four numeric inputs and one checkbox.
+The default configuration contains three buttons, four numeric inputs and one checkbox.
 
 Buttons:
 - Record: allows to start recording,
