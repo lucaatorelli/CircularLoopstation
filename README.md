@@ -12,7 +12,7 @@ In the following video is provided a simple demonstration of the use of Circular
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/UlGHmdACEOk/0.jpg)](https://www.youtube.com/watch?v=UlGHmdACEOk)
 
-# 2. Behind the concept
+# 2. Behind the concept: polyrhytm and polymeter
 Everyone says "music is made of rhythmic sound", so what is rhythm?
 
 Rhythm in music is characterized by a repeating sequence of stressed (strong) and unstressed (weak) beats, and it's divided into bars organized by time signature and tempo indications.
@@ -22,9 +22,11 @@ Tempo indication denotes how long is the beat distance. It's defined in beat per
 
 Time signature, normally, is based on fraction of 2 or 3. It's common to read on partitures quavers, triplets (3 notes played in the time of 2 equivalent notes), or multiple and submultiples of 2 and 3.
 
-Since XX century, expecially in contempourary music with ethnic influences, and following in jazz and other genres, the composers decides to use more complex rhythms, like 13/16 or 7/13 and so on, played simultaneously. This to create an extraordinary exotic effect of cycles in cycles that can create changing harmonies with the same material. Today this technique is well known to mathphilus composers, who write their music without be anchored to the same metric subdivision.
+Since XX century, expecially in contempourary music with ethnic influences, and following in jazz and other genres, the composers decides to use more complex rhythms played simultaneously. This to create an extraordinary exotic effect of cycles in cycles that can create changing harmonies with the same material. Today techniques as polyrhytm and polymeter are well known to mathphilus composers, who write their music without being anchored to the same metric subdivision.
 
-This composing technique is called ***"polyrhythmic"*** and its meter is called polymeter.
+We call ***polyrhythm*** the simultaneous use of two or more conflicting rhythms, that generate a particualr rhythmic pattern.
+
+We call ***polymeter*** the suerposition of different meters (different time signatures) that desynchronize themselves over time.
 
 # 3. The loopstation
 CircularLoopstation allows the visualization of the rythmic structure thanks to a clock-like graphic component that follows the progression of the loop and shows the alternation of all the audio tracks that have been uploaded into the loop. The loopstation is designed to be able to manage and visualize different signatures and durations at the same time, ensuring a simple but powerful understanding of the underlying structure of the cycle. The application provides two ways of importing audio tracks into the loopstation, allowing the user to easily create its own customizable musical loop. 
