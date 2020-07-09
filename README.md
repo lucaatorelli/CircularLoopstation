@@ -58,23 +58,28 @@ The control box is the component with which the user can control the loopstation
 At the bottom of the control box appear warning messages and is visualized the metronome while recording.
 <p align="center"><img aling="center" src="images/CB2.png" /></p>
 
-The simpler configuration contains three main buttons:
+The simpler configuration contains three buttons, four numeric inputs and one checkbox.
+
+Buttons:
 - Record: allows to start recording,
 - Play All: allows to play the whole loop,
 - Reset: stops every track and the circles animations.
 
-On the right of these buttons there is an indicator light that turns blue during record preparing and turns red during the recording session.
+On the right of these buttons there is a light indicator that turns blue during record preparing and turns red during the recording session.
 
-The control box, in its simples configuration, contains also four numeric inputs:
+Numeric inputs:
 - Numerator and denominator of time signature,
 - BPM, beats per minute (or rather tempo velocity),
 - Number of measures.
 
-The advanced (or complete) configuration, in addition, contains two sliders that become visible by clicking on the white circle. These sliders are:
+The checkbox allows the user to hide the graphical metric subdivision.
+
+The advanced (or complete) configuration, in addition, contains more controls that become visible by clicking on the white circle. These controls are:
+- Sliders for controlling the dimensions of the graphic components;
 - Manual Synch Value (100 ms by default): while recording, allows the user to set the gap between the played tracks and the recording;
 - Recording latency: (50 ms by default): it adjusts the gap between the ideal recording start time and the effective recording start time.
 
-These two parameters are necessary to work well on every device, because their value depend on device hardware or settings.
+These parameters are necessary to work well on every device, because their value depend on device hardware or settings.
 
 ### 3.1.3. Lateral panel
 The lateral panel is the interface part dedicated to the management of the tracks inside the database. It is composed by different sections with different funcitonalities. Specifically, from the top to the bottom, we can find: 
