@@ -22,7 +22,7 @@ Tempo indication denotes how long is the beat distance. It's defined in beat per
 
 Time signature, normally, is based on fraction of 2 or 3. It's common to read on partitures quavers, triplets (3 notes played in the time of 2 equivalent notes), or multiple and submultiples of 2 and 3.
 
-Since XX century, expecially in contempourary music with ethnic influences, and following in jazz and other genres, the composers decides to use more complex rhythms played simultaneously. This to create an extraordinary exotic effect of cycles in cycles that can create changing harmonies with the same material. Today techniques as polyrhytm and polymeter are well known to mathphilus composers, who write their music without being anchored to the same metric subdivision.
+Since XX century, expecially in contempourary music with ethnic influences, and following in jazz and other genres, the composers decides to use more complex rhythms played simultaneously. This to create an extraordinary exotic effect of cycles in cycles that can create changing harmonies with the same material. Today techniques as polyrhythm and polymeter are well known to mathphilus composers, who write their music without being anchored to the same metric subdivision.
 
 We call ***polyrhythm*** the simultaneous use of two or more conflicting rhythms, that generate a particualr rhythmic pattern.
 
