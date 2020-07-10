@@ -10,6 +10,8 @@ The application is developed by Gioele Greco and Luca Torelli, as part of the Ad
 
 In the following video is provided a simple demonstration of the use of CircularLoopstation:
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Z0atZQoY_e4/0.jpg)](https://www.youtube.com/watch?v=Z0atZQoY_e4)
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/UlGHmdACEOk/0.jpg)](https://www.youtube.com/watch?v=UlGHmdACEOk)
 
 # 2. Behind the concept: polyrhytm and polymeter
