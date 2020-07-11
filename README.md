@@ -18,7 +18,7 @@ In the following video are provided simple demonstrations of the use of Circular
 [<img src="https://img.youtube.com/vi/UlGHmdACEOk/maxresdefault.jpg" width="40%">](https://youtu.be/UlGHmdACEOk)
 *(Version 1.5)*
 
-# 2. Behind the concept: polyrhytm and polymeter
+# 2. Behind the concept: polyrhythm and polymeter
 Everyone says "music is made of rhythmic sound", so what is rhythm?
 
 Rhythm in music is characterized by a repeating sequence of stressed (strong) and unstressed (weak) beats, and it's divided into bars organized by time signature and tempo indications.
