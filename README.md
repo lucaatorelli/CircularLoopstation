@@ -10,13 +10,11 @@ The application is developed by Gioele Greco and Luca Torelli, as part of the Ad
 
 In the following video are provided simple demonstrations of the use of CircularLoopstation:
 
-*New version 2.1*
-
 [<img src="https://img.youtube.com/vi/Z0atZQoY_e4/maxresdefault.jpg" width="40%">](https://youtu.be/Z0atZQoY_e4)
-
-*Version 1.5*
+*(New version 2.1)*
 
 [<img src="https://img.youtube.com/vi/UlGHmdACEOk/maxresdefault.jpg" width="40%">](https://youtu.be/UlGHmdACEOk)
+*(Version 1.5)*
 
 # 2. Behind the concept: polyrhytm and polymeter
 Everyone says "music is made of rhythmic sound", so what is rhythm?
