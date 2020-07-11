@@ -8,10 +8,14 @@ The application is developed by Gioele Greco and Luca Torelli, as part of the Ad
 - CircularLoopstation is available at: https://circloopstation.surge.sh/
 - Link to CodePen: https://codepen.io/Torelli/pen/VwexxWZ
 
-In the following video is provided a simple demonstration of the use of CircularLoopstation:
-New version 2.1
+In the following video are provided simple demonstrations of the use of CircularLoopstation:
+
+*New version 2.1*
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Z0atZQoY_e4/0.jpg)](https://www.youtube.com/watch?v=Z0atZQoY_e4)
-version 1.5
+
+*Version 1.5*
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/UlGHmdACEOk/0.jpg)](https://www.youtube.com/watch?v=UlGHmdACEOk)
 
 # 2. Behind the concept: polyrhytm and polymeter
